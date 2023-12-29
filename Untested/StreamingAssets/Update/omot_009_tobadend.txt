@@ -1,0 +1,71 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 9 after making wrong choices
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+//圭一rvS14/01/210100718.「…詩音？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100718", 256, TRUE);
+	OutputLine(NULL, "「…詩音？」",
+			NULL, "\"...시온?\" ", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 6, "sprite/si1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600352.「…なんですか、圭ちゃん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600352", 256, TRUE);
+	OutputLine(NULL, "「…なんですか、圭ちゃん？」",
+			NULL, "\"...왜요, 케이쨩?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1b_tokui_b1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600353.「大丈夫ですよ、ちゃんと聞いていますから」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600353", 256, TRUE);
+	OutputLine(NULL, "「大丈夫ですよ、ちゃんと聞いていますから」",
+			NULL, "\"걱정 마세요. 제대로 듣고 있답니다.\" ", Line_Normal);
+	ClearMessage();
+
+//r詩音はそう答えながらも、視線は全然別の方向を向いている。…まるで、これ以上の話は必要ない、とでも言いたげに。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "詩音はそう答えながらも、視線は全然別の方向を向いている。…まるで、これ以上の話は必要ない、とでも言いたげに。",
+			NULL, "그렇게 대답하는 시온이지만 시선은 전혀 엉뚱한 방향을 향한다.... 마치 이 이상은 이야기를 들을 필요 없다는 듯이. ", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	PlaySE(3, "addse11", 256, 64);
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/sora2", 1000 );
+
+//r…俺たちはその後、どうでもいい世間話をしてから、店を出た。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…俺たちはその後、どうでもいい世間話をしてから、店を出た。",
+			NULL, "...우리는 그 후 시시한 잡담을 나누다가 가게를 나섰다. ", Line_Normal);
+	ClearMessage();
+
+//r一応全員にこやかな雰囲気だったが、…去り際の詩音の表情が、どうしても気になっていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "一応全員にこやかな雰囲気だったが、…去り際の詩音の表情が、どうしても気になっていた。",
+			NULL, "일단은 화기애애한 분위기였지만... 자리를 뜨던 순간 시온의 표정이 아무래도 마음에 걸린다. ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}
