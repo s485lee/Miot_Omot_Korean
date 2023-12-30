@@ -1,0 +1,216 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 9 after 3rd question
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 15, "sprite/kasa_1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//葛西rvS14/15/2115000054.「リナは、その鉄平とつるんでいるのです」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>카사이</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s14/15/2115000054", 256, TRUE);
+	OutputLine(NULL, "「リナは、その鉄平とつるんでいるのです」",
+			NULL, "\"리나는 그 텟페이와 붙어먹고 있습니다.\" ", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 6, "sprite/si1a_odoroki_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600344.「……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600344", 256, TRUE);
+	OutputLine(NULL, "「……」",
+			NULL, "\"......\" ", Line_Normal);
+	ClearMessage();
+
+//r面食らっている詩音に、葛西さんが補足してくれた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "面食らっている詩音に、葛西さんが補足してくれた。",
+			NULL, "당황하는 시온에게 카사이 씨가 보충 설명한다. ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 15, "sprite/kasa_2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//葛西rvS14/15/2115000055.「北条鉄平が札付きのゴロツキなのは、ご存じだと思います。kvS14/15/2115000056.そして、この興宮で生活を営んでいます」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>카사이</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s14/15/2115000055", 256, TRUE);
+	OutputLine(NULL, "「北条鉄平が札付きのゴロツキなのは、ご存じだと思います。",
+			NULL, "\"호죠 텟페이가 악평이 자자한 양아치라는 건 알고 계실 겁니다. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 15, "ps3/s14/15/2115000056", 256, TRUE);
+	OutputLine(NULL, "そして、この興宮で生活を営んでいます」",
+			NULL, "그 텟페이는, 여기 오키노미야에서 생활을 꾸리고 있습니다.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600345.「……それで？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600345", 256, TRUE);
+	OutputLine(NULL, "「……それで？」",
+			NULL, "\"......그래서?\" ", Line_Normal);
+	ClearMessage();
+
+//葛西rvS14/15/2115000057.「…リナはどうやら、鉄平と組んで結婚詐欺を生業にしているようでして」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>카사이</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s14/15/2115000057", 256, TRUE);
+	OutputLine(NULL, "「…リナはどうやら、鉄平と組んで結婚詐欺を生業にしているようでして」",
+			NULL, "\"...리나는 아무래도 텟페이와 짜고서 꽃뱀 사기를 생업으로 삼고 있다는 듯합니다.\" ", Line_Normal);
+	ClearMessage();
+
+//rつまり二人は、カモに女性が恋人のように言い寄って、いい感じになったところで男が乱入して『俺の女に手を出すな』と金を巻き上げるというわけだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "つまり二人は、カモに女性が恋人のように言い寄って、いい感じになったところで男が乱入して『俺の女に手を出すな』と金を巻き上げるというわけだ。",
+			NULL, "즉 그 둘은 여성이 희생양에게 반했다며 꾀어내고는, 무르익었다 싶을 때 남자가 난입해서 '감히 내 여자한테 손을 대'하면서 돈을 뜯어내는 패거리인 셈이다. ", Line_Normal);
+	ClearMessage();
+
+//葛西rvS14/15/2115000058.「近頃では、リナと組んでの詐欺行為が、北条鉄平の唯一の収入源のようですね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#76523d>葛西</color>", NULL, "<color=#76523d>카사이</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 15, "ps3/s14/15/2115000058", 256, TRUE);
+	OutputLine(NULL, "「近頃では、リナと組んでの詐欺行為が、北条鉄平の唯一の収入源のようですね」",
+			NULL, "\"최근에는 리나와 저지르는 사기 행위가 호죠 텟페이의 유일한 수입원이라더군요.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_tokui_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600346.「要は北条鉄平が、リナに生活を依存してる、ってことか…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600346", 256, TRUE);
+	OutputLine(NULL, "「要は北条鉄平が、リナに生活を依存してる、ってことか…」",
+			NULL, "\"요컨대 호죠 텟페이는 리나에게 생활을 의존하고 있다란 건가....\" ", Line_Normal);
+	ClearMessage();
+
+//r詩音は合点のいったというような顔でうなずいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "詩音は合点のいったというような顔でうなずいた。",
+			NULL, "시온이 납득된다는 얼굴로 고개를 끄덕인다. ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100711.「もし…、そのリナが金を持ってトンズラしたらどうなる？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100711", 256, TRUE);
+	OutputLine(NULL, "「もし…、そのリナが金を持ってトンズラしたらどうなる？」",
+			NULL, "\"만약... 그 리나가 돈을 챙기고 튀어버리면 어떻게 될까?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600347.「……？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600347", 256, TRUE);
+	OutputLine(NULL, "「……？」",
+			NULL, "\"......?\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100712.「リナが上納金を持って興宮の町からトンズラしたら…、kvS14/01/210100713.いや、落とし前つけられて消されても、収入源を失った鉄平は、即、路頭に迷う。kvS14/01/210100714.家賃だってすぐに払えなくなるし、生活にも困る」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100712", 256, TRUE);
+	OutputLine(NULL, "「リナが上納金を持って興宮の町からトンズラしたら…、",
+			NULL, "\"리나가 상납금을 챙기고 오키노미야에서 튀어버리면.... ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100713", 256, TRUE);
+	OutputLine(NULL, "いや、落とし前つけられて消されても、収入源を失った鉄平は、即、路頭に迷う。",
+			NULL, " 아니, 뒤처리 당해 사라지더라도 수입원을 잃은 텟페이는 곧 길거리에 나앉게 되겠지. ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100714", 256, TRUE);
+	OutputLine(NULL, "家賃だってすぐに払えなくなるし、生活にも困る」",
+			NULL, " 금세 집세도 못 내게 되고 생활도 곤란해져.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_tokui_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600348.「まぁ、そうでしょうね。けど…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600348", 256, TRUE);
+	OutputLine(NULL, "「まぁ、そうでしょうね。けど…」",
+			NULL, "\"뭐, 그렇게 되겠죠. 하지만...\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100715.「そうしたら…、北条鉄平は雛見沢の家に戻るしかない。kvS14/01/210100716.…そうなったら沙都子は、その鉄平に連れ戻される。kvS14/01/210100717.その結果…どういうことが想像できる？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100715", 256, TRUE);
+	OutputLine(NULL, "「そうしたら…、北条鉄平は雛見沢の家に戻るしかない。",
+			NULL, "\"수입이 사라지면... 호죠 텟페이는 히나미자와에 있는 집으로 돌아올 수밖에 없어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100716", 256, TRUE);
+	OutputLine(NULL, "…そうなったら沙都子は、その鉄平に連れ戻される。",
+			NULL, "...그러면 사토코는 그 텟페이에게 끌려가게 될테고. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100717", 256, TRUE);
+	OutputLine(NULL, "その結果…どういうことが想像できる？」",
+			NULL, "어떤 결과가 될지 상상되지 않아?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_odoroki_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600349.「っ……？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600349", 256, TRUE);
+	OutputLine(NULL, "「っ……？！」",
+			NULL, "\"읏...?!\" ", Line_Normal);
+	ClearMessage();
+
+//rそれを聞いた瞬間、詩音の顔色がさっと変わる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを聞いた瞬間、詩音の顔色がさっと変わる。",
+			NULL, "내 말을 들은 순간 시온의 안색이 싹 바뀐다. ", Line_Normal);
+	ClearMessage();
+
+//r沙都子が叔父夫婦にどんな扱いを受けていたのか、俺よりも梨花ちゃん、そして詩音がよく知っているはずだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "沙都子が叔父夫婦にどんな扱いを受けていたのか、俺よりも梨花ちゃん、そして詩音がよく知っているはずだ。",
+			NULL, "사토코가 숙부 부부에게 어떤 대우를 받았는지는 나보다도 리카쨩과 시온이 더 잘 안다. ", Line_Normal);
+	ClearMessage();
+
+//r今は梨花ちゃんと二人暮らしをしていることで、元気を取り戻していた沙都子がもし、叔父と再び暮らし始めて、去年と同じ状況になったとしたら…簡単に、想像できることだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "今は梨花ちゃんと二人暮らしをしていることで、元気を取り戻していた沙都子がもし、叔父と再び暮らし始めて、去年と同じ状況になったとしたら…簡単に、想像できることだった。",
+			NULL, "지금은 리카쨩과 둘이 생활하면서 생기를 되찾았지만, 사토코가 혹시나 숙부와 다시 함께 생활하며 작년 같은 상황에 처하게 된다면... 이후는 쉽게 상상할 수 있다. ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_warai_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//詩音rvS14/06/210600350.「……あ、あはは圭ちゃん！　考えすぎ！kvS14/06/210600351.　それ、どこのテレビドラマの話ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#5ec69a>詩音</color>", NULL, "<color=#5ec69a>시온</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600350", 256, TRUE);
+	OutputLine(NULL, "「……あ、あはは圭ちゃん！　考えすぎ！",
+			NULL, "\"......아, 아하하, 케이쨩! 생각이 지나쳐요!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600351", 256, TRUE);
+	OutputLine(NULL, "　それ、どこのテレビドラマの話ですか？」",
+			NULL, "혹시 어딘가의 TV 드라마 줄거리인가요?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 6, "sprite/si1a_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//rしばしの沈黙の後…、詩音は乾いた笑い声を立てておどけて見せる。しかし、その目には危険な殺意が宿っていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しばしの沈黙の後…、詩音は乾いた笑い声を立てておどけて見せる。しかし、その目には危険な殺意が宿っていた。",
+			NULL, "잠시간 침묵이 흐른 뒤... 시온이 메마른 웃음소리를 내며 익살을 떤다. 하지만 그 눈에는 위험한 살의가 깃들어 있다. ", Line_Normal);
+	ClearMessage();
+
+//r――まだ生きてたんだ、あいつ。沙都子を苦しめ追い詰めた、張本人の片割れ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "——まだ生きてたんだ、あいつ。沙都子を苦しめ追い詰めた、張本人の片割れ。",
+			NULL, "...아직 살아있었나, 그 녀석. 사토코를 괴롭히고 몰아세웠던 장본인 중 하나. ", Line_Normal);
+	ClearMessage();
+
+//r興宮にいる間は見逃してやってたけど、許したわけでもないのに…当の本人は好き勝手にのうのうと生きてたってわけか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "興宮にいる間は見逃してやってたけど、許したわけでもないのに…当の本人は好き勝手にのうのうと生きてたってわけか。",
+			NULL, "오키노미야에 있는 동안 못 본 척 했을 뿐, 용서한 게 아닌데도... 정작 본인은 빈둥거리며 제멋대로 살고 있었구나. ", Line_Normal);
+	ClearMessage();
+
+//rやっぱり、許せない。だったらリナってやつと一緒に、その鉄平も……！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "やっぱり、許せない。だったらリナってやつと一緒に、その鉄平も……！",
+			NULL, "역시 용서 못 해. 이렇게 된 거 리나라는 녀석과 함께 그 텟페이도......! ", Line_Normal);
+	ClearMessage();
+
+//rそう、どす黒い感情が詩音の心の中で渦巻いているのが俺にもわかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう、どす黒い感情が詩音の心の中で渦巻いているのが俺にもわかった。",
+			NULL, "시온의 마음속에서 소용돌이치는 거무칙칙한 감정이 나에게도 전해진다. ", Line_Normal);
+	ClearMessage();
+
+}

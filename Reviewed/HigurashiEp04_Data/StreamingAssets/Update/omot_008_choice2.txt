@@ -1,0 +1,541 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 8 choice 2
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	DrawScene("black", 1500 );
+
+//r冷たい女だと、圭一は思っただろうか。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "冷たい女だと、圭一は思っただろうか。",
+			NULL, "케이이치가 나를 차가운 여자라 생각하지 않을까. ", Line_Normal);
+	ClearMessage();
+
+//r…私だって、本当はこんな展開は、不本意だ。でも、リナを図書館で目撃してから、ひたすら考えて、考えて、…ようやくたどり着いた結論が、これだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…私だって、本当はこんな展開は、不本意だ。でも、リナを図書館で目撃してから、ひたすら考えて、考えて、…ようやくたどり着いた結論が、これだった。",
+			NULL, "...사실은 나도 이런 전개 따윈 원치 않는다. 하지만 리나를 도서관에서 목격한 이후, 생각하고 생각해서... 겨우 도달한 결론이 이거다. ", Line_Normal);
+	ClearMessage();
+
+//r沙都子が叔父の鉄平に連れ去られ、ひどい仕打ちを受けて精神的に追い詰められる…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "沙都子が叔父の鉄平に連れ去られ、ひどい仕打ちを受けて精神的に追い詰められる…。",
+			NULL, "사토코가 숙부인 텟페이에게 끌려가 가혹한 대우를 받고 정신적으로 내몰린다.... ", Line_Normal);
+	ClearMessage();
+
+//rずっと最悪のシナリオだと、思っていた。この事態に陥ったときは、ほぼ確実に圭一が、あるいは詩音が、レナが鉄平に対して殺意を抱き、鉄平を物理的に排除しようとする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ずっと最悪のシナリオだと、思っていた。この事態に陥ったときは、ほぼ確実に圭一が、あるいは詩音が、レナが鉄平に対して殺意を抱き、鉄平を物理的に排除しようとする。",
+			NULL, "줄곧 최악의 시나리오라고 생각해 왔다. 이 사태가 되면 거의 확실하게 케이이치, 혹은 시온이나 레나가 텟페이에게 살의를 품고 텟페이를 물리적으로 배제하려 드니까. ", Line_Normal);
+	ClearMessage();
+
+//rそして、その結果。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、その結果。",
+			NULL, "그리고 그 결과.", Line_Normal);
+	ClearMessage();
+
+//r殺人という罪の意識から、彼らは周囲の動向に対して疑心暗鬼にとらわれて、自ら破滅してゆく。そして、私はそんな彼らに相談できるはずもなく、やがて鷹野たちの手にかかって殺されてしまう…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "殺人という罪の意識から、彼らは周囲の動向に対して疑心暗鬼にとらわれて、自ら破滅してゆく。そして、私はそんな彼らに相談できるはずもなく、やがて鷹野たちの手にかかって殺されてしまう…。",
+			NULL, "친구들은 살인을 저지른 죄의식으로 주위 움직임에 의심암귀가 씌여 스스로 파멸하게 되고, 나는 그런 친구들에게 상담도 하지 못하다 얼마 지나지 않아 타카노 손에 걸려 살해당하고 만다...", Line_Normal);
+	ClearMessage();
+
+//rこの連鎖は、決して断ち切れないものと思ってきた。だからこの展開に世界が動き出したときは、運がなかったと思って早々に諦めてしまっていたのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "この連鎖は、決して断ち切れないものと思ってきた。だからこの展開に世界が動き出したときは、運がなかったと思って早々に諦めてしまっていたのだ。",
+			NULL, "이는 결코 끊기지 않는 연쇄라고 생각했기에, 이 전개대로 세계가 움직이기 시작하면 운이 없었다고 생각하며 재빨리 포기해 버렸다. ", Line_Normal);
+	ClearMessage();
+
+//rでも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも。",
+			NULL, "하지만. ", Line_Normal);
+	ClearMessage();
+
+//r前回の世界で、圭一はこの不幸のシナリオを、自らの行動と信念で見事に打ち破ってくれた。沙都子を救い出し、彼女がずっと苦しんできた村人との確執さえ、綺麗に取り払ってしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "前回の世界で、圭一はこの不幸のシナリオを、自らの行動と信念で見事に打ち破ってくれた。沙都子を救い出し、彼女がずっと苦しんできた村人との確執さえ、綺麗に取り払ってしまった。",
+			NULL, "이전 세계에서 케이이치가 불행한 시나리오를 자신의 행동과 신념으로 무너뜨려 줬다. 사토코를 구해 내고 그녀를 줄곧 괴롭혀 온 마을 사람들과의 불화마저 깔끔하게 없애 버렸다. ", Line_Normal);
+	ClearMessage();
+
+//rそして、私は気づいたのだ。最悪だと思っていたシナリオは、今まで考えもしなかったけど、実は一番ゴールに近づく方法だということに。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、私は気づいたのだ。最悪だと思っていたシナリオは、今まで考えもしなかったけど、実は一番ゴールに近づく方法だということに。",
+			NULL, "덕분에 나도 깨달았다. 최악이라 생각했던 시나리오가, 지금까지 생각해 본 적 없을 뿐 실은 가장 골에 가까워지는 방법이었음을.", Line_Normal);
+	ClearMessage();
+
+//rそのためには…沙都子を……『見捨てる』しかなくて…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そのためには…沙都子を……『見捨てる』しかなくて…。",
+			NULL, "그러니... 사토코를...... '내버려 둘' 수밖에 없어.... ", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "semi", 128, 0 );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 1, "sprite/kei1_ikari1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, FALSE );
+	DrawScene("background/ji2", 1000 );
+
+//圭一rvS14/01/210100609.「つまり、今は…。kvS14/01/210100610.沙都子を見捨てろ、と？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100609", 256, TRUE);
+	OutputLine(NULL, "「つまり、今は…。",
+			NULL, "\"즉, 지금은... ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100610", 256, TRUE);
+	OutputLine(NULL, "沙都子を見捨てろ、と？」",
+			NULL, "사토코를 내버려 두란 소리야?\" ", Line_Normal);
+	ClearMessage();
+
+//rだから圭一の言葉に、思わず怒りを隠せなかった。圭一に対してじゃない。無力で、薄情で、…冷酷な考えを選んだ、私自身に対してだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから圭一の言葉に、思わず怒りを隠せなかった。圭一に対してじゃない。無力で、薄情で、…冷酷な考えを選んだ、私自身に対してだ。",
+			NULL, "그래서 케이이치의 말에 무심코 화를 내고 말았다. 케이이치를 향해서가 아니라 무력하고 박정하고... 냉혹한 생각을 선택한 나 자신을 향해서. ", Line_Normal);
+	ClearMessage();
+
+//r真実を知れば、沙都子は怒るだろうか。恨むだろうか。…そして、憎むだろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "真実を知れば、沙都子は怒るだろうか。恨むだろうか。…そして、憎むだろうか。",
+			NULL, "진상을 알게 되면 사토코는 화내고 원망하고... 나를 증오하겠지.", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500460.「大局的に見れば…なんて、勝手な言い分だと思います。kvS14/05/210500461.だから、ボクのこの判断を正しいと認めてもらいたいわけじゃないのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500460", 256, TRUE);
+	OutputLine(NULL, "「大局的に見れば…なんて、勝手な言い分だと思います。",
+			NULL, "\"크게 보면... 이란 말은 억지 주장이겠죠.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500461", 256, TRUE);
+	OutputLine(NULL, "だから、ボクのこの判断を正しいと認めてもらいたいわけじゃないのです」",
+			NULL, " 그러니 저의 이 판단이 옳다고 인정받고 싶다는 건 아니에요.\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500462.「…でも、他にいい方法が見つからない以上、この選択しか思いつかないのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500462", 256, TRUE);
+	OutputLine(NULL, "「…でも、他にいい方法が見つからない以上、この選択しか思いつかないのです」",
+			NULL, "\"...하지만 달리 좋은 방법을 찾을 수 없으니, 이 선택지밖에 떠오르지 않는 거예요.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100611.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100611", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"......\"   ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500463.「だから、圭一。あなたはこの先、感情的にならないでほしいのです。kvS14/05/210500464.それと、それ以外にも詩ぃとレナは沙都子を助けようと、強攻策に出るでしょう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500463", 256, TRUE);
+	OutputLine(NULL, "「だから、圭一。あなたはこの先、感情的にならないでほしいのです。",
+			NULL, "\"케이이치. 당신은 앞으로 감정적으로 나서지 않았으면 해요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500464", 256, TRUE);
+	OutputLine(NULL, "それと、それ以外にも詩ぃとレナは沙都子を助けようと、強攻策に出るでしょう」",
+			NULL, " 하나 더, 시이나 레나가 사토코를 구하려고 강경책으로 나설 거예요.\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500465.「これをなんとしても、あなたの力で止めてもらいたいのです。kvS14/05/210500466.だから……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500465", 256, TRUE);
+	OutputLine(NULL, "「これをなんとしても、あなたの力で止めてもらいたいのです。",
+			NULL, "\"그걸 어떻게 해서든 당신의 힘으로 막아줬으면 하는 거예요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500466", 256, TRUE);
+	OutputLine(NULL, "だから……」",
+			NULL, "그러면......\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_ikari1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	FadeOutBGM(1, 200, TRUE);
+
+//圭一rvS14/01/210100612.「――だめだな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100612", 256, TRUE);
+	OutputLine(NULL, "「——だめだな」",
+			NULL, "\"...무리야.\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500467.「……みぃ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500467", 256, TRUE);
+	OutputLine(NULL, "「……みぃ？」",
+			NULL, "\"......미이?\" ", Line_Normal);
+	ClearMessage();
+
+//rしかし圭一は、私の苦渋など何処吹く風とでも言うように、あっさりと一蹴してくれた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかし圭一は、私の苦渋など何処吹く風とでも言うように、あっさりと一蹴してくれた。",
+			NULL, "하지만 케이이치는 내 고뇌 따윈 알 바 아니라는 듯 딱 잘라 일축한다.", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+	PlayBGM(2, "hm05_21", 128, 0);
+
+//圭一rvS14/01/210100613.「梨花ちゃんの言いたいことは、分かった。kvS14/01/210100614.…だけど、それって要するに駆け引きだろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100613", 256, TRUE);
+	OutputLine(NULL, "「梨花ちゃんの言いたいことは、分かった。",
+			NULL, "\"리카쨩이 말하려는 바는 알겠어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100614", 256, TRUE);
+	OutputLine(NULL, "…だけど、それって要するに駆け引きだろ？」",
+			NULL, "...하지만 그건, 달리 말해 저울질이잖아?\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100615.「そんなの俺には似合わないし、したくもない。kvS14/01/210100616.だから、梨花ちゃんの予言する未来がたとえ本当だとしても、kvS14/01/210100617.…俺は悪いけど、ごめんだね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100615", 256, TRUE);
+	OutputLine(NULL, "「そんなの俺には似合わないし、したくもない。",
+			NULL, "\"나한테 어울리지도 않고, 하고 싶지도 않아. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100616", 256, TRUE);
+	OutputLine(NULL, "だから、梨花ちゃんの予言する未来がたとえ本当だとしても、",
+			NULL, "그러니 리카쨩이 예언하는 미래가 설령 진짜라 해도... ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100617", 256, TRUE);
+	OutputLine(NULL, "…俺は悪いけど、ごめんだね」",
+			NULL, "미안하지만 나는 사양할게.\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500468.「圭一……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500468", 256, TRUE);
+	OutputLine(NULL, "「圭一……」",
+			NULL, "\"케이이치...\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_nayamu_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100618.「沙都子が、村の連中から白い目で見られてるってのは以前、聞いた。kvS14/01/210100619.ダム工事の賛成派が、沙都子の両親だって話だよな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100618", 256, TRUE);
+	OutputLine(NULL, "「沙都子が、村の連中から白い目で見られてるってのは以前、聞いた。",
+			NULL, "\"사토코가 마을 녀석들한테 멸시받는다는 이야긴 전에 들었어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100619", 256, TRUE);
+	OutputLine(NULL, "ダム工事の賛成派が、沙都子の両親だって話だよな」",
+			NULL, "사토코 부모님이 댐 공사 찬성파라는 얘기였지.\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100620.「…でもだからって、その方法でしかあいつを救ってやれないってのは、変だと思う」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100620", 256, TRUE);
+	OutputLine(NULL, "「…でもだからって、その方法でしかあいつを救ってやれないってのは、変だと思う」",
+			NULL, "\"...하지만 사토코를 구할 수 있는 유일한 방법이 그거라니 납득할 수 없어.\"", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100621.「他にもいい機会があるかもしれないし――。kvS14/01/210100622.それに、俺は別に村の連中にそんなやり方で信頼されたいなんて思わない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100621", 256, TRUE);
+	OutputLine(NULL, "「他にもいい機会があるかもしれないし——。",
+			NULL, "\"다른 좋은 기회가 있을지도 모르고... ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100622", 256, TRUE);
+	OutputLine(NULL, "それに、俺は別に村の連中にそんなやり方で信頼されたいなんて思わない」",
+			NULL, " 게다가 나는 딱히 그런 방식으로 마을 녀석들에게서 신뢰를 얻고 싶진 않아.\, Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500469.「…村の人たちを一つにまとめなければ、この先の敵と戦えない。kvS14/05/210500470.その敵に勝てなければ、みんなが不幸になる。kvS14/05/210500471.――それでも、ですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500469", 256, TRUE);
+	OutputLine(NULL, "「…村の人たちを一つにまとめなければ、この先の敵と戦えない。",
+			NULL, "\"...마을 사람들을 하나로 모으지 못하면 앞으로 적과 맞설 수 없어요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500470", 256, TRUE);
+	OutputLine(NULL, "その敵に勝てなければ、みんなが不幸になる。",
+			NULL, "적에게 이기지 못하면 모두 불행해져요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500471", 256, TRUE);
+	OutputLine(NULL, "——それでも、ですか？」",
+			NULL, "...그래도 말인가요?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100623.「言っただろ？kvS14/01/210100624.　俺はそんな運命、信じちゃいないって！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100623", 256, TRUE);
+	OutputLine(NULL, "「言っただろ？",
+			NULL, "\"말했잖아? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100624", 256, TRUE);
+	OutputLine(NULL, "　俺はそんな運命、信じちゃいないって！」",
+			NULL, " 나는 그딴 운명 믿지 않는다고!\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_majime_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100625.「敵がどういうやつかはまだ分からないけど、俺たちの幸せをぶち壊そうとするやつは絶対に許さないし、絶対に負けたりしない！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100625", 256, TRUE);
+	OutputLine(NULL, "「敵がどういうやつかはまだ分からないけど、俺たちの幸せをぶち壊そうとするやつは絶対に許さないし、絶対に負けたりしない！」",
+			NULL, "\"적이 어떤 녀석인지는 아직 모르겠지만 우리의 행복을 깨부수려 한다면 절대 용서하지 않을 거고, 절대 지지도 않겠어!\"", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100626.「そのためだったら、村の連中を全員説得して回ることだってしてみせる！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100626", 256, TRUE);
+	OutputLine(NULL, "「そのためだったら、村の連中を全員説得して回ることだってしてみせる！！」",
+			NULL, "\"적을 이기기 위해서라면, 마을 녀석 전부를 설득하러 돌아다니는 짓이라도 해주고말고!!\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500472.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500472", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"......\"   ", Line_Normal);
+	ClearMessage();
+
+//r私は目を伏せながら、呆れまじりに吐息をつく。…馬鹿だとは思っていたけど、これほどまでとは思わなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私は目を伏せながら、呆れまじりに吐息をつく。…馬鹿だとは思っていたけど、これほどまでとは思わなかった。",
+			NULL, "눈을 내리깔고 아연한 심정이 섞인 한숨을 내쉰다.... 바보인 줄은 알고 있었지만, 이 정도일 줄이야, 생각지도 못했다. ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500473.「…むしろ、教えない方がよかったのかもしれません」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500473", 256, TRUE);
+	OutputLine(NULL, "「…むしろ、教えない方がよかったのかもしれません」",
+			NULL, "\"...차라리 알려 주지 않는 게 나았을지도 모르겠어요.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100627.「いや、教えてくれてよかったぜ。kvS14/01/210100628.…梨花ちゃんだって、沙都子を本当は叔父の野郎なんかに渡したくないんだろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100627", 256, TRUE);
+	OutputLine(NULL, "「いや、教えてくれてよかったぜ。",
+			NULL, "\"아니, 알려 줘서 다행이야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100628", 256, TRUE);
+	OutputLine(NULL, "…梨花ちゃんだって、沙都子を本当は叔父の野郎なんかに渡したくないんだろ？」",
+			NULL, " ...리카쨩도 실은 사토코를 숙부놈 따위에게 보내기 싫지?\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500474.「…なら、どんな手段があるというのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500474", 256, TRUE);
+	OutputLine(NULL, "「…なら、どんな手段があるというのですか？」",
+			NULL, "\"...그럼, 무슨 수단이 있다는 건가요?\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100629.「決まってる。kvS14/01/210100630.沙都子がその鉄平に連れ去られないよう、リナの盗みを防ぐ方法を考えるさ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100629", 256, TRUE);
+	OutputLine(NULL, "「決まってる。",
+			NULL, "\"뻔하잖아. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100630", 256, TRUE);
+	OutputLine(NULL, "沙都子がその鉄平に連れ去られないよう、リナの盗みを防ぐ方法を考えるさ！」",
+			NULL, " 사토코가 그 텟페이에게 끌려가지 않도록 리나의 절도 계획을 막는 방법을 생각해 내면 돼!\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500475.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500475", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"......\"   ", Line_Normal);
+	ClearMessage();
+
+//r…予想できた回答に、軽く失望する。そんなこと、ここに来るまでの間に、どれだけ私が考えたと思っているのだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…予想できた回答に、軽く失望する。そんなこと、ここに来るまでの間に、どれだけ私が考えたと思っているのだ。",
+			NULL, "...예상한 대답에 가볍게 실망한다. 그런 방법, 지금에 이르기까지 내가 몇 번을 고민했는지 모른다. ", Line_Normal);
+	ClearMessage();
+
+//r私だって、沙都子を見捨てるようなことはしたくない。あの虚ろで、生気を失ったような目をまた見なければいけないかと考えただけで…身を切り裂かれたような思いになる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私だって、沙都子を見捨てるようなことはしたくない。あの虚ろで、生気を失ったような目をまた見なければいけないかと考えただけで…身を切り裂かれたような思いになる。",
+			NULL, "나라고 사토코를 내버리는 짓 따윈 하고 싶지 않다. 공허하고 생기 잃은 사토코의 눈을 또다시 봐야만 한다니 생각만 해도... 온몸이 갈가리 찢기는 것 같다. ", Line_Normal);
+	ClearMessage();
+
+//rでも、…他に方法が、本当に見当たらないのだ。…間宮リナの計画を失敗させず、成功させず、計画自体を放棄させる方法なんて、一体何があるというのだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも、…他に方法が、本当に見当たらないのだ。…間宮リナの計画を失敗させず、成功させず、計画自体を放棄させる方法なんて、一体何があるというのだろう。",
+			NULL, "하지만... 다른 방법이 도저히 보이지가 않는다.... 마미야 리나의 계획이 실패도 성공도 하지 않고, 계획 자체를 포기하게 만드는 방법이라니, 도대체 무슨 수가 있을까.", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500476.「……圭一。kvS14/05/210500477.盗みを防ぐと言っても、リナを殺させず、しかも成功して興宮から出て行かないようにするためには、リナ自身に盗みを諦めさせなければいけないのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500476", 256, TRUE);
+	OutputLine(NULL, "「……圭一。",
+			NULL, "\"......케이이치. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500477", 256, TRUE);
+	OutputLine(NULL, "盗みを防ぐと言っても、リナを殺させず、しかも成功して興宮から出て行かないようにするためには、リナ自身に盗みを諦めさせなければいけないのです」",
+			NULL, "절도를 막는다고 해도, 실패해서 리나가 죽지 않거나 성공해서 오키노미야를 벗어나지 않도록 하려면 리나 스스로가 절도를 포기하는 것뿐이에요.\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500478.「そうなると、警察や園崎組の関係者にも相談できません。kvS14/05/210500479.――どうやって、防ぐつもりですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500478", 256, TRUE);
+	OutputLine(NULL, "「そうなると、警察や園崎組の関係者にも相談できません。",
+			NULL, "\"그러려면 경찰이나 소노자키 조직 관계자와도 상담할 수 없어요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500479", 256, TRUE);
+	OutputLine(NULL, "——どうやって、防ぐつもりですか？」",
+			NULL, "...대체 어떻게 막을 생각인가요?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_def2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//r私の問いかけに対し、圭一はふふん、と腕組みしてニヤリと笑った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "私の問いかけに対し、圭一はふふん、と腕組みしてニヤリと笑った。",
+			NULL, "내 질문에 케이이치가 흐흥 소리를 내며 팔짱을 끼고는 히죽 웃는다. ", Line_Normal);
+	ClearMessage();
+
+//r…なんだか、ちょっと憎らしい。もし、これでいつものように『これから考える』なんて言ったら、この瓶で殴ってやる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…なんだか、ちょっと憎らしい。もし、これでいつものように『これから考える』なんて言ったら、この瓶で殴ってやる。",
+			NULL, "...어딘가 조금 얄밉다. 혹시 이러면서 평소처럼 '지금부터 생각할게' 같은 소리를 한다면 이 병으로 때려줘야지. ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100631.「――梨花ちゃん、忘れたか？kvS14/01/210100632.　沙都子のためだったら、力を確実に貸してくれるやつが部活メンバーにいるじゃないか」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100631", 256, TRUE);
+	OutputLine(NULL, "「——梨花ちゃん、忘れたか？",
+			NULL, "\"...리카쨩, 잊었어? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100632", 256, TRUE);
+	OutputLine(NULL, "　沙都子のためだったら、力を確実に貸してくれるやつが部活メンバーにいるじゃないか」",
+			NULL, "부활동 멤버 중에, 사토코를 위해서라면 확실하게 힘을 빌려줄 녀석이 있잖아.\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500480.「みぃ？　……あ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500480", 256, TRUE);
+	OutputLine(NULL, "「みぃ？　……あ」",
+			NULL, "\"미이? ......아.\" ", Line_Normal);
+	ClearMessage();
+
+//rそれが誰を指しているかを理解し、…軽く嘆息した。その方法についても、想定は済ませてある。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが誰を指しているかを理解し、…軽く嘆息した。その方法についても、想定は済ませてある。",
+			NULL, "누구를 말하는 건지 이해하고 작게 탄식했다. 그 방법도 생각은 했었다. ", Line_Normal);
+	ClearMessage();
+
+//rそう、園崎組へのつてを持ち、沙都子の危機があればどんな手段でも選びそうな人物。――それは、園崎詩音。しかし…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう、園崎組へのつてを持ち、沙都子の危機があればどんな手段でも選びそうな人物。——それは、園崎詩音。しかし…。",
+			NULL, "그래, 소노자키 조직에 연줄도 있고 사토코가 위험하다면 어떤 수단이라도 가리지 않을 만한 인물.... 바로 소노자키 시온. 하지만... ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500481.「詩ぃに、どうやって伝えますか？kvS14/05/210500482.　そもそも暴力団は、メンツを非常に気にしますのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500481", 256, TRUE);
+	OutputLine(NULL, "「詩ぃに、どうやって伝えますか？",
+			NULL, "\"시이에게 어떻게 말할 건가요?", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500482", 256, TRUE);
+	OutputLine(NULL, "　そもそも暴力団は、メンツを非常に気にしますのです」",
+			NULL, " 애초에 폭력단은 체면을 엄청 신경 쓰는 거예요.\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500483.「もし組の若い連中が金庫を狙ってると知ったら、それだけでも生かして返すわけにはいかなくなります。kvS14/05/210500484.…そうなると結局、リナは殺されるしかなくなるのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500483", 256, TRUE);
+	OutputLine(NULL, "「もし組の若い連中が金庫を狙ってると知ったら、それだけでも生かして返すわけにはいかなくなります。",
+			NULL, "\"만약 조직의 젊은 녀석들이 금고를 노린다는 걸 알게 된다면 그 사실만으로도 살려 보내지 않는 거예요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500484", 256, TRUE);
+	OutputLine(NULL, "…そうなると結局、リナは殺されるしかなくなるのです」",
+			NULL, " ...그렇게 되면 결국 리나는 살해당할 수밖에 없는 거예요.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100633.「まぁ、普通に伝えたら…な。kvS14/01/210100634.でも、もしリナたちの計画が、はじめからなかったものにしてしまえば、どうなる？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100633", 256, TRUE);
+	OutputLine(NULL, "「まぁ、普通に伝えたら…な。",
+			NULL, "\"뭐어, 평범하게 말한다면... 말이지. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100634", 256, TRUE);
+	OutputLine(NULL, "でも、もしリナたちの計画が、はじめからなかったものにしてしまえば、どうなる？」",
+			NULL, "하지만 만약 리나 패거리의 계획을 처음부터 없던 일로 만들어 버린다면, 어떨까?\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500485.「…？？kvS14/05/210500486.　み、みぃ…言ってる意味がよくわからないのです」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500485", 256, TRUE);
+	OutputLine(NULL, "「…？？",
+			NULL, "\"...?? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500486", 256, TRUE);
+	OutputLine(NULL, "　み、みぃ…言ってる意味がよくわからないのです」",
+			NULL, "미, 미이... 무슨 말을 하는 건지 잘 모르겠는 거예요.\" ", Line_Normal);
+	ClearMessage();
+
+//r言葉通り、さっぱりわからない。圭一はいったい、何を考えているのだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "言葉通り、さっぱりわからない。圭一はいったい、何を考えているのだろう。",
+			NULL, "말 그대로 전혀 이해할 수가 없다. 케이이치는 대체 무슨 생각을 하는 걸까. ", Line_Normal);
+	ClearMessage();
+
+//rでも…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも…。",
+			NULL, "하지만...", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_warai_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100635.「ま、任せてくれないか、梨花ちゃん。俺に、いい考えがあるんだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100635", 256, TRUE);
+	OutputLine(NULL, "「ま、任せてくれないか、梨花ちゃん。俺に、いい考えがあるんだ」",
+			NULL, "\"뭐, 맡겨 줘, 리카쨩. 나에게 좋은 생각이 있으니까.\" ", Line_Normal);
+	ClearMessage();
+
+//rそう言って圭一は、不敵に笑う。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言って圭一は、不敵に笑う。",
+			NULL, "케이이치가 그렇게 말하며 대담하게 웃는다. ", Line_Normal);
+	ClearMessage();
+
+//rその顔を見ていると、さっきまで沙都子を見捨てることに対する罪悪感や、自身の無力感でものすごく嫌な気分だったものが…まるで、馬鹿みたいに思えてくるから、不思議だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その顔を見ていると、さっきまで沙都子を見捨てることに対する罪悪感や、自身の無力感でものすごく嫌な気分だったものが…まるで、馬鹿みたいに思えてくるから、不思議だった。",
+			NULL, "그 얼굴을 보고 있자니 방금까지 들던 사토코를 내버린다는 죄악감이나 무력한 자신을 탓하던 부정적인 감정이... 바보처럼 느껴져 묘한 느낌이 든다. ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 1, "sprite/kei1_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//圭一rvS14/01/210100636.「な？　梨花ちゃん」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100636", 256, TRUE);
+	OutputLine(NULL, "「な？　梨花ちゃん」",
+			NULL, "\"알겠지? 리카쨩.\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500487.「……みぃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500487", 256, TRUE);
+	OutputLine(NULL, "「……みぃ」",
+			NULL, "\"......미이.\" ", Line_Normal);
+	ClearMessage();
+
+//rだから、つい頷いてしまう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "だから、つい頷いてしまう。",
+			NULL, "그래서 그만 고개를 끄덕여 버린다. ", Line_Normal);
+	ClearMessage();
+
+//rまぁ、いいだろう。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まぁ、いいだろう。",
+			NULL, "뭐, 괜찮겠지. ", Line_Normal);
+	ClearMessage();
+
+//rこの、運命は金魚すくいの紙だと言い放った少年が、どんな奇跡を起こしてくれるというのか…私は、見てみたくなった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "この、運命は金魚すくいの紙だと言い放った少年が、どんな奇跡を起こしてくれるというのか…私は、見てみたくなった。",
+			NULL, "운명이란 금붕어 건지기에 쓰는 종이라고 말하던 이 소년이 어떤 기적을 일으켜 줄지... 한번 보고 싶어졌으니까. ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

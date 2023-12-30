@@ -1,0 +1,1236 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 10 after 3rd question
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+//圭一rvS14/01/210100841.「レナ、そのリナってやつのこと、何処まで知ってるんだ？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100841", 256, TRUE);
+	OutputLine(NULL, "「レナ、そのリナってやつのこと、何処まで知ってるんだ？」",
+			NULL, "\"레나, 그 리나라는 녀석에 대해서 어디까지 알고 있어?\" ", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 2, "sprite/re2a_def_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200236.「言ったよね？　関係ないって。kvS14/02/210200237.だから、話すことなんてない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200236", 256, TRUE);
+	OutputLine(NULL, "「言ったよね？　関係ないって。",
+			NULL, "\"말했잖아? 상관없다고. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200237", 256, TRUE);
+	OutputLine(NULL, "だから、話すことなんてない」",
+			NULL, "그러니 얘기할 생각 없어.\" ", Line_Normal);
+	ClearMessage();
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100842.「じゃあ、俺が勝手に話す。kvS14/01/210100843.…いいよな？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100842", 256, TRUE);
+	OutputLine(NULL, "「じゃあ、俺が勝手に話す。",
+			NULL, "\"그럼, 내 멋대로 말할게. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100843", 256, TRUE);
+	OutputLine(NULL, "…いいよな？」",
+			NULL, "...괜찮지?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200238.「…話しても、聞かないよ。kvS14/02/210200239.話したければ、お好きにどうぞ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200238", 256, TRUE);
+	OutputLine(NULL, "「…話しても、聞かないよ。",
+			NULL, "\"...말해도 안 들을 거야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200239", 256, TRUE);
+	OutputLine(NULL, "話したければ、お好きにどうぞ」",
+			NULL, "굳이 말하고 싶다면 좋을 대로 해.\" ", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+
+//rレナはそう言って、あからさまに嫌そうに顔をそらす。それでも圭一は、落ち着いて、レナに言って聞かせるようにゆっくりと話し始めた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナはそう言って、あからさまに嫌そうに顔をそらす。それでも圭一は、落ち着いて、レナに言って聞かせるようにゆっくりと話し始めた。",
+			NULL, "말을 마친 레나가 노골적으로 불쾌한 기색을 내비치며 얼굴을 돌리지만, 케이이치는 침착하게 레나에게 들려주듯 천천히 이야기를 시작한다. ", Line_Normal);
+	ClearMessage();
+
+	DrawSceneWithMask( "black", "down", 0, 0, 1000 );
+
+//圭一rvS14/01/210100844.「詩音から聞いた話だ。kvS14/01/210100845.…レナの親父さん、間宮リナの働いている店に頻繁に通ってるらしいな。kvS14/01/210100846.それも、ほぼ毎日」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100844", 256, TRUE);
+	OutputLine(NULL, "「詩音から聞いた話だ。",
+			NULL, "\"시온이 들려준 이야기야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100845", 256, TRUE);
+	OutputLine(NULL, "…レナの親父さん、間宮リナの働いている店に頻繁に通ってるらしいな。",
+			NULL, "...레나네 아버지, 마미야 리나가 일하는 가게에 자주 다닌다나 봐. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100846", 256, TRUE);
+	OutputLine(NULL, "それも、ほぼ毎日」",
+			NULL, "게다가 거의 매일.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200240.「――――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200240", 256, TRUE);
+	OutputLine(NULL, "「————」",
+			NULL, "\"......\"    ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100847.「その店って、繁華街の中でもすげー高い店らしいな。kvS14/01/210100848.一回行くだけでも、相当な金額だそうだ。kvS14/01/210100849.…だから常連客は、すぐに顔が知れ渡るって聞いた」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100847", 256, TRUE);
+	OutputLine(NULL, "「その店って、繁華街の中でもすげー高い店らしいな。",
+			NULL, "\"그 가게, 번화가에서도 굉장히 비싼 가게라서. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100848", 256, TRUE);
+	OutputLine(NULL, "一回行くだけでも、相当な金額だそうだ。",
+			NULL, "한 번만 가도 돈이 꽤 든대. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100849", 256, TRUE);
+	OutputLine(NULL, "…だから常連客は、すぐに顔が知れ渡るって聞いた」",
+			NULL, "...그래서 단골손님은 금방 소문이 난다더라고.\" ", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 100, FALSE );
+	DrawScene("background/re_h3", 150 );
+	PlaySE(3, "down2", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//レナrvS14/02/210200241.「そんな言い方止めて」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200241", 256, TRUE);
+	OutputLine(NULL, "「そんな言い方止めて」",
+			NULL, "\"그런 식으로 말하지 마.\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100850.「…聞かないんじゃなかったのか？kvS14/01/210100851.　だから俺が、勝手に喋ってるだけだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100850", 256, TRUE);
+	OutputLine(NULL, "「…聞かないんじゃなかったのか？",
+			NULL, "\"...안 듣는다고 하지 않았어? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100851", 256, TRUE);
+	OutputLine(NULL, "　だから俺が、勝手に喋ってるだけだ」",
+			NULL, "난 혼자 멋대로 떠들고 있을 뿐이야.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200242.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200242", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"......\"    ", Line_Normal);
+	ClearMessage();
+
+//rレナはカップに手を伸ばし、ぬるくなったお茶を飲み干す。そして両手に抱えたまま、じっと底を見つめて黙り込んでいた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナはカップに手を伸ばし、ぬるくなったお茶を飲み干す。そして両手に抱えたまま、じっと底を見つめて黙り込んでいた。",
+			NULL, "레나가 컵에 손을 뻗어 미지근해진 차를 들이켜더니, 양손으로 컵을 감싼 채 입을 다물고 바닥을 쳐다본다. ", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm05_22", 128, 0);
+
+//圭一rvS14/01/210100852.「はっきり言う。kvS14/01/210100853.――レナ、その間宮リナってのは、詐欺師だ。kvS14/01/210100854.男と組んで、結婚詐欺を働いてる」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100852", 256, TRUE);
+	OutputLine(NULL, "「はっきり言う。",
+			NULL, "\"터놓고 말할게. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100853", 256, TRUE);
+	OutputLine(NULL, "——レナ、その間宮リナってのは、詐欺師だ。",
+			NULL, "...레나, 그 마미야 리나라는 녀석은 사기꾼이야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100854", 256, TRUE);
+	OutputLine(NULL, "男と組んで、結婚詐欺を働いてる」",
+			NULL, "남자와 짜고서 꽃뱀 사기를 저지르고 있어.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200243.「え……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200243", 256, TRUE);
+	OutputLine(NULL, "「え……」",
+			NULL, "\"어......?\"", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100855.「リナは最近、雛見沢にカモを見つけたって言いふらしてるらしい。kvS14/01/210100856.そして、その時の話で出てきた苗字が、『竜宮』…だったそうだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100855", 256, TRUE);
+	OutputLine(NULL, "「リナは最近、雛見沢にカモを見つけたって言いふらしてるらしい。",
+			NULL, "\"리나가 최근 히나미자와에서 먹잇감을 찾았다고 떠들고 다닌다더라. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100856", 256, TRUE);
+	OutputLine(NULL, "そして、その時の話で出てきた苗字が、『竜宮』…だったそうだ」",
+			NULL, "그리고 그 이야기에서 나오는 성이 '류구'...래.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200244.「……証拠は？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200244", 256, TRUE);
+	OutputLine(NULL, "「……証拠は？」",
+			NULL, "\"......증거는?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100857.「これも詩音からの情報だ。kvS14/01/210100858.リナは物持ちのいい相手を見つけては言い寄って、多額の金品をせしめている、ってな。kvS14/01/210100859.その店でも有名になっているそうだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100857", 256, TRUE);
+	OutputLine(NULL, "「これも詩音からの情報だ。",
+			NULL, "\"이 정보도 시온이 알려준 거야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100858", 256, TRUE);
+	OutputLine(NULL, "リナは物持ちのいい相手を見つけては言い寄って、多額の金品をせしめている、ってな。",
+			NULL, " 리나는 돈 많은 상대를 찾아 꾀어내서 고액의 금품을 뜯어낸다, 라고. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100859", 256, TRUE);
+	OutputLine(NULL, "その店でも有名になっているそうだ」",
+			NULL, " 가게에서도 유명하대.\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200245.「……大人なんだから、プレゼントだって高いものになるよ。kvS14/02/210200246.そんなの、お父さんの自由じゃないかな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200245", 256, TRUE);
+	OutputLine(NULL, "「……大人なんだから、プレゼントだって高いものになるよ。",
+			NULL, "\"......어른이니까 선물도 비싸지는 거야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200246", 256, TRUE);
+	OutputLine(NULL, "そんなの、お父さんの自由じゃないかな」",
+			NULL, "그 정도는 아빠 마음 아닐까나.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_komaru_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100860.「なら、正直に聞くけどさ。kvS14/01/210100861.…普通、結婚まで考えてる相手にそこまで、お金を使わせるものなのか？kvS14/01/210100862.　それに俺が、もしレナとそんな関係になったとしたら――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100860", 256, TRUE);
+	OutputLine(NULL, "「なら、正直に聞くけどさ。",
+			NULL, "\"그럼, 솔직하게 묻겠는데....", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100861", 256, TRUE);
+	OutputLine(NULL, "…普通、結婚まで考えてる相手にそこまで、お金を使わせるものなのか？",
+			NULL, " 일반적으로 결혼까지 생각하는 상대에게 그렇게까지 돈을 쓰게 만들까? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100862", 256, TRUE);
+	OutputLine(NULL, "　それに俺が、もしレナとそんな関係になったとしたら——」",
+			NULL, "만약 내가 레나와 그런 관계가 된다면....\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200247.「――お断りだね。kvS14/02/210200248.レナにだって選ぶ権利はあるよ。kvS14/02/210200249.こんなふうにおせっかい風吹かせて嫌なこといっぱい言ってくる人のお嫁さんになんか、絶対なりたくない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200247", 256, TRUE);
+	OutputLine(NULL, "「——お断りだね。",
+			NULL, "\"...사양할래. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200248", 256, TRUE);
+	OutputLine(NULL, "レナにだって選ぶ権利はあるよ。",
+			NULL, "레나에게도 선택할 권리가 있어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200249", 256, TRUE);
+	OutputLine(NULL, "こんなふうにおせっかい風吹かせて嫌なこといっぱい言ってくる人のお嫁さんになんか、絶対なりたくない」",
+			NULL, " 이딴 식으로 참견질해대고 불쾌한 소리를 잔뜩 해대는 사람의 신부 따위, 절대 되고 싶지 않아.\"", Line_Normal);
+	ClearMessage();
+
+//r露骨に嫌そうな顔をして、そう吐き捨てるレナ。それに対して圭一は、ため息をひとつついて言い直した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "露骨に嫌そうな顔をして、そう吐き捨てるレナ。それに対して圭一は、ため息をひとつついて言い直した。",
+			NULL, "레나가 노골적으로 불쾌하단 표정을 지으며 말을 내뱉자, 케이이치가 한숨을 한 번 내쉬고는 말을 고친다. ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_nayamu_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100863.「じゃあ、魅音でもいい。kvS14/01/210100864.沙都子でも、梨花ちゃんでも。kvS14/01/210100865.…もし、結婚しようと本気で考えた相手なら、俺は店になんか来させない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100863", 256, TRUE);
+	OutputLine(NULL, "「じゃあ、魅音でもいい。",
+			NULL, "\"그럼, 미온이라도 좋아. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100864", 256, TRUE);
+	OutputLine(NULL, "沙都子でも、梨花ちゃんでも。",
+			NULL, "사토코든, 리카쨩이든. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100865", 256, TRUE);
+	OutputLine(NULL, "…もし、結婚しようと本気で考えた相手なら、俺は店になんか来させない」",
+			NULL, " ...만약 진지하게 결혼할 상대라면, 나는 가게에 못 오게 했을 거야.\"", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100866.「相手の気持ちを考えたら金もそうだけど、他のやつに浮気してるかも、なんて疑われるの、ごめんだからな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100866", 256, TRUE);
+	OutputLine(NULL, "「相手の気持ちを考えたら金もそうだけど、他のやつに浮気してるかも、なんて疑われるの、ごめんだからな」",
+			NULL, "\"상대방의 마음을 생각하면, 돈도 돈이지만 다른 녀석과 바람을 피울지 모른다는 의심을 사는 건 싫으니까.\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200250.「…普通の会社だって、男性女性いっぱいいるよ。kvS14/02/210200251.そんなことを考えてたら、結婚して働くなんてきっとできない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200250", 256, TRUE);
+	OutputLine(NULL, "「…普通の会社だって、男性女性いっぱいいるよ。",
+			NULL, "\"...평범한 회사에도 이성은 잔뜩 있어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200251", 256, TRUE);
+	OutputLine(NULL, "そんなことを考えてたら、結婚して働くなんてきっとできない」",
+			NULL, "하나하나 따지면, 결혼하고 나서는 일을 어떻게 하는데.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100867.「普通の会社じゃないだろ？kvS14/01/210100868.　これは、恋愛した気分を愉しむ店の話だ。kvS14/01/210100869.金を使ってな」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100867", 256, TRUE);
+	OutputLine(NULL, "「普通の会社じゃないだろ？",
+			NULL, "\"평범한 회사가 아니잖아? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100868", 256, TRUE);
+	OutputLine(NULL, "　これは、恋愛した気分を愉しむ店の話だ。",
+			NULL, "거기는 연애를 하는 기분을 즐기는 가게야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100869", 256, TRUE);
+	OutputLine(NULL, "金を使ってな」",
+			NULL, "돈을 써서.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200252.「……だから、お父さんも寂しいんだってさっき、言ったじゃない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200252", 256, TRUE);
+	OutputLine(NULL, "「……だから、お父さんも寂しいんだってさっき、言ったじゃない」",
+			NULL, "\"...그러니까, 아빠는 쓸쓸한 것뿐이라고 방금 말했잖아.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100870.「もう一度言うぞ、レナ。kvS14/01/210100871.…親父さんは、騙されてる。kvS14/01/210100872.間宮リナに――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100870", 256, TRUE);
+	OutputLine(NULL, "「もう一度言うぞ、レナ。",
+			NULL, "\"레나, 다시 한번 말할게...", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100871", 256, TRUE);
+	OutputLine(NULL, "…親父さんは、騙されてる。",
+			NULL, "레나네 아버지는 속고 계셔. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100872", 256, TRUE);
+	OutputLine(NULL, "間宮リナに——」",
+			NULL, " 마미야 리나에게....\"", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 100, TRUE );
+	PlaySE(3, "garasu", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	PlayBGM( 1, "semi_r", 128, 0 );
+
+//レナrvS14/02/210200253.「嘘だッッッ！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200253", 256, TRUE);
+	OutputLine(NULL, "「嘘だッッッ！！！」",
+			NULL, "\"거짓말!!!\" ", Line_Normal);
+	ClearMessage();
+
+//rがちゃん！　と乱暴にレナは、カップをテーブルに叩きつける。その勢いでクッキーの山が、ざらざらと崩れ落ちてこぼれた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "がちゃん！　と乱暴にレナは、カップをテーブルに叩きつける。その勢いでクッキーの山が、ざらざらと崩れ落ちてこぼれた。",
+			NULL, "쨍그랑! 레나가 테이블에 컵을 난폭하게 내려친 충격으로 쿠키 더미가 우르르 무너져 내린다. ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200254.「さっきからおとなしく聞いていれば、勝手なことばっかり！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200254", 256, TRUE);
+	OutputLine(NULL, "「さっきからおとなしく聞いていれば、勝手なことばっかり！」",
+			NULL, "\"아까부터 가만히 들어주자니 멋대로 지껄이기나 하고!\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200255.「圭一くんはレナのお父さんを、おばかさんだとでも思ってるの？！kvS14/02/210200256.　詐欺をするような人かどうか、ちゃんとわかってじゃなきゃプロポーズなんてできないよっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200255", 256, TRUE);
+	OutputLine(NULL, "「圭一くんはレナのお父さんを、おばかさんだとでも思ってるの？！",
+			NULL, "\"케이이치 군은 레나네 아빠가 바보인 줄 알아?! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200256", 256, TRUE);
+	OutputLine(NULL, "　詐欺をするような人かどうか、ちゃんとわかってじゃなきゃプロポーズなんてできないよっ！！」",
+			NULL, "사기 치는 사람인지 아닌지 제대로 알아보지도 않고 프로포즈를 할 리가 없잖아!!\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100873.「何言ってんだ！kvS14/01/210100874.　騙して結婚するから、結婚詐欺だろ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100873", 256, TRUE);
+	OutputLine(NULL, "「何言ってんだ！",
+			NULL, "\"무슨 소리를 하는 거야!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100874", 256, TRUE);
+	OutputLine(NULL, "　騙して結婚するから、結婚詐欺だろ？！」",
+			NULL, " 속이고 결혼을 하니까 꽃뱀 사기라고!!\"", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100875.「しかもあいつは、北条鉄平ってやつと関係してるんだ！kvS14/01/210100876.　…だいたい、さっきからおかしいのはレナの方だろうが！kvS14/01/210100877.　詩音がわざわざ教えてくれた情報なのに、なにを頭から疑って聞いてるんだよ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100875", 256, TRUE);
+	OutputLine(NULL, "「しかもあいつは、北条鉄平ってやつと関係してるんだ！",
+			NULL, "\"게다가 그 녀석은 호죠 텟페이라는 자식이랑 연관되어 있어! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100876", 256, TRUE);
+	OutputLine(NULL, "　…だいたい、さっきからおかしいのはレナの方だろうが！",
+			NULL, "...애초에, 아까부터 이상한 건 레나 쪽이잖아! ", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100877", 256, TRUE);
+	OutputLine(NULL, "　詩音がわざわざ教えてくれた情報なのに、なにを頭から疑って聞いてるんだよ？！」",
+			NULL, "시온이 애써 알려준 정보인데, 왜 의심부터 하면서 듣는 건데?!\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200257.「おかしい？kvS14/02/210200258.　…おかしいのは圭一くんの方だよ。kvS14/02/210200259.なんで関係のないレナの家のことに、そこまで口出ししてくるのかなぁ？kvS14/02/210200260.　なんか詩ぃちゃんに頼まれたの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200257", 256, TRUE);
+	OutputLine(NULL, "「おかしい？",
+			NULL, "\"이상하다고? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200258", 256, TRUE);
+	OutputLine(NULL, "　…おかしいのは圭一くんの方だよ。",
+			NULL, "...이상한 건 케이이치 군 쪽이야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200259", 256, TRUE);
+	OutputLine(NULL, "なんで関係のないレナの家のことに、そこまで口出ししてくるのかなぁ？",
+			NULL, "어째서 관계도 없는 레나네 집안 사정에 그렇게까지 간섭하려 드는 걸까나아? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200260", 256, TRUE);
+	OutputLine(NULL, "　なんか詩ぃちゃんに頼まれたの？」",
+			NULL, "뭔가 시이쨩한테 부탁이라도 받았어?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//レナrvS14/02/210200261.「ねぇっ？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200261", 256, TRUE);
+	OutputLine(NULL, "「ねぇっ？！」",
+			NULL, "\"으응?!\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100878.「関係ないことあるか！kvS14/01/210100879.　レナは俺たちの仲間だ！kvS14/01/210100880.　仲間が悩んで、苦しんでいることを見過ごすなんて、俺にはできないんだよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100878", 256, TRUE);
+	OutputLine(NULL, "「関係ないことあるか！",
+			NULL, "\"관계가 없다니!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100879", 256, TRUE);
+	OutputLine(NULL, "　レナは俺たちの仲間だ！",
+			NULL, "레나는 우리의 친구야! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100880", 256, TRUE);
+	OutputLine(NULL, "　仲間が悩んで、苦しんでいることを見過ごすなんて、俺にはできないんだよ！」",
+			NULL, "친구가 힘들어하고 괴로워하는 걸 지켜만 보라니, 나는 못 해!\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_warai_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200262.「仲間ぁ？kvS14/02/210200263.　…はっ、お笑いだね！kvS14/02/210200264.　相手の気持ちも考えずに傷跡に刃物突き立ててグリグリ掘り返すような人なんて、仲間じゃないよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200262", 256, TRUE);
+	OutputLine(NULL, "「仲間ぁ？",
+			NULL, "\"친구우? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200263", 256, TRUE);
+	OutputLine(NULL, "　…はっ、お笑いだね！",
+			NULL, "...하, 웃기시네!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200264", 256, TRUE);
+	OutputLine(NULL, "　相手の気持ちも考えずに傷跡に刃物突き立ててグリグリ掘り返すような人なんて、仲間じゃないよ！」",
+			NULL, " 상대 심정은 생각도 안 하고 상처 자국에 칼붙이를 꽂아넣고, 이리저리 쑤셔대는 사람이 어떻게 친구야!\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200265.「それに誰が悩んでるって？kvS14/02/210200266.　苦しんでるって？kvS14/02/210200267.　あはははは！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200265", 256, TRUE);
+	OutputLine(NULL, "「それに誰が悩んでるって？",
+			NULL, "\"그리고 누가 힘들어한다고? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200266", 256, TRUE);
+	OutputLine(NULL, "　苦しんでるって？",
+			NULL, "누가 괴로워한다고? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200267", 256, TRUE);
+	OutputLine(NULL, "　あはははは！」",
+			NULL, "아하하하하!\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200268.「圭一くん、委員長になってずいぶん偉くなったんだねぇ！kvS14/02/210200269.　顔と雰囲気でわかる、とでも言いたいの？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200268", 256, TRUE);
+	OutputLine(NULL, "「圭一くん、委員長になってずいぶん偉くなったんだねぇ！",
+			NULL, "\"케이이치 군, 반장이 되고 나서 꽤 잘나지셨네!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200269", 256, TRUE);
+	OutputLine(NULL, "　顔と雰囲気でわかる、とでも言いたいの？」",
+			NULL, " 얼굴빛과 분위기로 다 안다는 거야?\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//レナrvS14/02/210200270.「でもおあいにく様！kvS14/02/210200271.　レナは全然悩んでもないし苦しくもないんだよ！kvS14/02/210200272.　だってこれから、ちゃんと幸せを掴むんだから！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200270", 256, TRUE);
+	OutputLine(NULL, "「でもおあいにく様！",
+			NULL, "\"하지만 안타깝게 됐네요! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200271", 256, TRUE);
+	OutputLine(NULL, "　レナは全然悩んでもないし苦しくもないんだよ！",
+			NULL, "레나는 전혀 힘들지도 않고, 괴롭지도 않아! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200272", 256, TRUE);
+	OutputLine(NULL, "　だってこれから、ちゃんと幸せを掴むんだから！！」",
+			NULL, "분명 앞으로 행복해질 테니까!!\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100881.「嘘だなっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100881", 256, TRUE);
+	OutputLine(NULL, "「嘘だなっ！！」",
+			NULL, "\"거짓말!!\" ", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "daidageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//レナrvS14/02/210200273.「嘘じゃないっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200273", 256, TRUE);
+	OutputLine(NULL, "「嘘じゃないっ！！」",
+			NULL, "\"거짓말 아냐!!\" ", Line_Normal);
+	ClearMessage();
+
+//r…そうだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そうだ。",
+			NULL, "...확실해. ", Line_Normal);
+	ClearMessage();
+
+//rいくらレナが頑固だとしても、これは異常だった。レナはさっきから、父親の弁護というよりもむしろ、圭一の言うことを認めたくない、といった感じに拒絶しつづけている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "いくらレナが頑固だとしても、これは異常だった。レナはさっきから、父親の弁護というよりもむしろ、圭一の言うことを認めたくない、といった感じに拒絶しつづけている。",
+			NULL, "아무리 레나가 완고하다고 해도 이건 이상하다. 레나는 아까 전부터 아버지를 변호한다기보다, 오히려 케이이치의 말을 인정하지 않겠다는 듯 거부하기만 한다. ", Line_Normal);
+	ClearMessage();
+
+//rしかも情報の出元は、詩音だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しかも情報の出元は、詩音だ。",
+			NULL, "심지어 정보의 출처는 시온이다. ", Line_Normal);
+	ClearMessage();
+
+//rこれ以上ないほどに確かで、親身に満ちたもののはず。…なのに、そんな私たち仲間からの情報を『嘘』と言い切るなんて。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "これ以上ないほどに確かで、親身に満ちたもののはず。…なのに、そんな私たち仲間からの情報を『嘘』と言い切るなんて。",
+			NULL, "더할 나위 없이 정확하고 신뢰할 만한 정보원인데도... 우리 친구들이 전하는 정보를 '거짓말'이라고 단언하다니. ", Line_Normal);
+	ClearMessage();
+
+//rまるでこれでは、あの悲劇を起こしたときのレナと同じじゃないか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まるでこれでは、あの悲劇を起こしたときのレナと同じじゃないか。",
+			NULL, "이래서야 마치 그 비극을 일으켰던 때의 레나와 똑같지 않은가.", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500586.「…レナ。kvS14/05/210500587.詩ぃの話が、信じられないのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500586", 256, TRUE);
+	OutputLine(NULL, "「…レナ。",
+			NULL, "\"...레나. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500587", 256, TRUE);
+	OutputLine(NULL, "詩ぃの話が、信じられないのですか？」",
+			NULL, "시이의 말을 믿지 못하는 건가요?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200274.「…詩ぃちゃんがどういうつもりで、リナさんのことをそんなふうに悪く言うのか知らない」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200274", 256, TRUE);
+	OutputLine(NULL, "「…詩ぃちゃんがどういうつもりで、リナさんのことをそんなふうに悪く言うのか知らない」",
+			NULL, "\"...시이쨩이 무슨 생각으로 리나 씨를 그렇게 나쁘게 말하는지는 모르겠어.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+	PlaySE(3, "dageki", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+
+//レナrvS14/02/210200275.「でも、変なことを言って、レナを迷わせないで！kvS14/02/210200276.　私はこの結婚を祝福して、信じることに決めたの。kvS14/02/210200277.これは、もう決まったことなんだよ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200275", 256, TRUE);
+	OutputLine(NULL, "「でも、変なことを言って、レナを迷わせないで！",
+			NULL, "\"하지만 이상한 말로 레나를 혼란스럽게 하지 말아줘!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200276", 256, TRUE);
+	OutputLine(NULL, "　私はこの結婚を祝福して、信じることに決めたの。",
+			NULL, " 나는 이 결혼을 축복하고, 믿어주기로 정했는걸. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200277", 256, TRUE);
+	OutputLine(NULL, "これは、もう決まったことなんだよ！」",
+			NULL, " 이건 이미 정해진 일이란 말이야!\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100882.「決まったこと…だと？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100882", 256, TRUE);
+	OutputLine(NULL, "「決まったこと…だと？」",
+			NULL, "\"정해진... 일이라고?\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200278.「だってこれは！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200278", 256, TRUE);
+	OutputLine(NULL, "「だってこれは！」",
+			NULL, "\"그래 맞아!\" ", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(1, 200, TRUE);
+	PlaySE(3, "sinzouappaku", 256, 64);
+	DrawScene("white", 500 );
+	DrawScene("black", 500 );
+
+//レナrvS14/02/210200279.「――オヤシロさまがそうしなさいって言ったんだから！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200279", 256, TRUE);
+	OutputLine(NULL, "「——オヤシロさまがそうしなさいって言ったんだから！！」",
+			NULL, "\"......오야시로님이 그러라고 하셨으니까!!\"", Line_Normal);
+	ClearMessage();
+
+//rレナはそう、…ぴしゃりと強い口調で言い放った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナはそう、…ぴしゃりと強い口調で言い放った。",
+			NULL, "레나가 툭, 강한 어조로 말을 내뱉는다. ", Line_Normal);
+	ClearMessage();
+
+	Wait( 2000 );
+	PlayBGM( 1, "semi_r", 128, 0 );
+	DrawScene("white", 1500 );
+	ModDrawCharacter(5, 5, "sprite/ri2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2a_hig_muhyou_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/re_h3", 1500 );
+
+//圭一rvS14/01/210100883.「オヤシロさま、だって…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100883", 256, TRUE);
+	OutputLine(NULL, "「オヤシロさま、だって…？」",
+			NULL, "\"오야시로님...?\" ", Line_Normal);
+	ClearMessage();
+
+//r聞きなれない単語だ。…いや、思い出した。確か、今度の綿流し祭で祀られる、この雛見沢村の守り神がそういう名だったはずだ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "聞きなれない単語だ。…いや、思い出した。確か、今度の綿流し祭で祀られる、この雛見沢村の守り神がそういう名だったはずだ。",
+			NULL, "익숙지 않은 단어다.... 아, 기억났다. 분명 곧 열릴 와타나가시 축제에서 모신다는, 이곳 히나미자와의 수호신의 이름이었지. ", Line_Normal);
+	ClearMessage();
+
+//rでも、そのオヤシロさまが、どうして…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも、そのオヤシロさまが、どうして…？",
+			NULL, "하지만 그 오야시로님이 어째서...? ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100884.「…梨花ちゃん？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100884", 256, TRUE);
+	OutputLine(NULL, "「…梨花ちゃん？」",
+			NULL, "\"...리카쨩?\" ", Line_Normal);
+	ClearMessage();
+
+//r俺は思わず、隣の梨花ちゃんに顔を向けて尋ねる。が、梨花ちゃんもあっけに取られたように、怪訝な表情のまま目を丸くしていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は思わず、隣の梨花ちゃんに顔を向けて尋ねる。が、梨花ちゃんもあっけに取られたように、怪訝な表情のまま目を丸くしていた。",
+			NULL, "나도 몰래 옆에 있는 리카쨩에게 고개를 돌리고 물어보지만, 리카쨩도 어안이 벙벙한 듯 의아하다는 표정으로 눈을 둥글게 뜬 채다.", Line_Normal);
+	ClearMessage();
+
+	PlayBGM(2, "hm06_25", 128, 0);
+
+//レナrvS14/02/210200280.「レナも最初は、お父さんの結婚には乗り気じゃなかった。kvS14/02/210200281.でも１週間くらい前の夜、レナの枕元にやって来たの。kvS14/02/210200282.ひたひた、ぺたぺたって足音を立てて…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200280", 256, TRUE);
+	OutputLine(NULL, "「レナも最初は、お父さんの結婚には乗り気じゃなかった。",
+			NULL, "\"레나도 처음에는 아빠의 재혼을 찬성하고 싶지 않았어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200281", 256, TRUE);
+	OutputLine(NULL, "でも１週間くらい前の夜、レナの枕元にやって来たの。",
+			NULL, "하지만 일주일 정도 전날 밤에, 자고 있는 레나의 머리맡에 찾아온 거야.", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200282", 256, TRUE);
+	OutputLine(NULL, "ひたひた、ぺたぺたって足音を立てて…」",
+			NULL, "뚜벅뚜벅, 저벅저벅 발소리를 내면서....\" ", Line_Normal);
+	ClearMessage();
+
+	FadeAllBustshots( 200, TRUE );
+
+//rレナはそう言いながら、手を胸の前で組んでかすかに震える。その表情は恐怖に固まり、決して冗談で言っているようには見えない。さすがに異様を感じて、俺は態度を改めレナに向き直った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナはそう言いながら、手を胸の前で組んでかすかに震える。その表情は恐怖に固まり、決して冗談で言っているようには見えない。さすがに異様を感じて、俺は態度を改めレナに向き直った。",
+			NULL, "레나가 가슴 앞에서 손을 마주 잡더니 살며시 몸을 떤다. 공포로 딱딱하게 굳은 표정을 보아하니, 농담 같아 보이지는 않는다. 아무래도 이상하다 싶어, 나는 자세를 바로잡고 레나를 똑바로 마주 봤다. ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100885.「なんで…オヤシロさまが、レナのところに…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100885", 256, TRUE);
+	OutputLine(NULL, "「なんで…オヤシロさまが、レナのところに…？」",
+			NULL, "\"어째서... 오야시로님이 레나에게...?\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200283.「圭一くんは知らないんだね。kvS14/02/210200284.…オヤシロさまは、私たちのことをずっと見てる。kvS14/02/210200285.そして雛見沢から出て行ったり、オヤシロさまをちゃんと敬ったりしない人に祟って、罰を与えるの」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200283", 256, TRUE);
+	OutputLine(NULL, "「圭一くんは知らないんだね。",
+			NULL, "\"케이이치 군은 모르는구나. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200284", 256, TRUE);
+	OutputLine(NULL, "…オヤシロさまは、私たちのことをずっと見てる。",
+			NULL, " ...오야시로님은 늘 우리를 지켜보고 있어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200285", 256, TRUE);
+	OutputLine(NULL, "そして雛見沢から出て行ったり、オヤシロさまをちゃんと敬ったりしない人に祟って、罰を与えるの」",
+			NULL, "그리고는 히나미자와에서 벗어나거나, 오야시로님을 제대로 숭상하지 않는 사람을 저주해 신벌을 내려.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200286.「だからレナの家も、…オヤシロさまを大事にしなかったから、罰が当たった…っ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200286", 256, TRUE);
+	OutputLine(NULL, "「だからレナの家も、…オヤシロさまを大事にしなかったから、罰が当たった…っ！」",
+			NULL, "\"분명 레나네 집도... 오야시로님을 소중히 여기지 않았기 때문에 신벌을 받은 거야...!\" ", Line_Normal);
+	ClearMessage();
+
+//rぎゅっ、と身をすくめて、レナはうわごとのように呟く。その言葉は奇怪で、異様で、…とても、正気の沙汰とは思えないものだったが、俺は黙って、耳を傾けた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ぎゅっ、と身をすくめて、レナはうわごとのように呟く。その言葉は奇怪で、異様で、…とても、正気の沙汰とは思えないものだったが、俺は黙って、耳を傾けた。",
+			NULL, "레나가 몸을 꽉 움츠리고 알 수 없는 소리를 중얼거린다. 그 말은 기괴하고 이상해서... 도저히 제정신으로 하는 행동처럼 보이지 않았지만, 나는 말 없이 귀를 기울였다. ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200287.「…お父さんとお母さんが離婚したのは、レナのせいなの。kvS14/02/210200288.雛見沢を出て行くとき、レナは反対した。kvS14/02/210200289.でも、結局お母さんのためだからって言われて付いていったら、お父さんが不幸になっちゃった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200287", 256, TRUE);
+	OutputLine(NULL, "「…お父さんとお母さんが離婚したのは、レナのせいなの。",
+			NULL, "\"...아빠랑 엄마가 이혼한 건 레나 때문이야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200288", 256, TRUE);
+	OutputLine(NULL, "雛見沢を出て行くとき、レナは反対した。",
+			NULL, "히나미자와를 떠날 때 레나는 반대했어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200289", 256, TRUE);
+	OutputLine(NULL, "でも、結局お母さんのためだからって言われて付いていったら、お父さんが不幸になっちゃった」",
+			NULL, " 하지만 결국 엄마를 위해서라길래 따라갔더니, 아빠가 불행해지고 말았어.\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200290.「…ほんとはもっともっと、お父さんの幸せを考えて、頑張って反対していたら、こんなことにはならなかったはずなのにっ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200290", 256, TRUE);
+	OutputLine(NULL, "「…ほんとはもっともっと、お父さんの幸せを考えて、頑張って反対していたら、こんなことにはならなかったはずなのにっ…！」",
+			NULL, "\"...그 때 아빠의 행복을 생각해서 더 완고하게 반대했더라면 이렇게 되지 않았을 텐데...!\"", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100886.「…それが、この再婚話と関係あるのか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100886", 256, TRUE);
+	OutputLine(NULL, "「…それが、この再婚話と関係あるのか？」",
+			NULL, "\"...그거랑 이 재혼 얘기랑 관계있어?\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200291.「大有りなんだよ！kvS14/02/210200292.　やっとお父さんは、昔の傷を忘れて新しい幸せを見つけてくれた。kvS14/02/210200293.なのにレナは、最初喜べなかった。kvS14/02/210200294.賛成できなかった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200291", 256, TRUE);
+	OutputLine(NULL, "「大有りなんだよ！",
+			NULL, "\"있는 게 당연하잖아! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200292", 256, TRUE);
+	OutputLine(NULL, "　やっとお父さんは、昔の傷を忘れて新しい幸せを見つけてくれた。",
+			NULL, "아빠가 겨우 옛 상처를 잊고 새로운 행복을 찾아냈어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200293", 256, TRUE);
+	OutputLine(NULL, "なのにレナは、最初喜べなかった。",
+			NULL, "그치만 레나, 처음에는 기쁘지 않았어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200294", 256, TRUE);
+	OutputLine(NULL, "賛成できなかった」",
+			NULL, "찬성할 수 없었어.\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200295.「そのうち段々、リナさんのことが疎ましくなって、見ているだけで不愉快になってきて、家をのっとられるかも、だったらその前に！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200295", 256, TRUE);
+	OutputLine(NULL, "「そのうち段々、リナさんのことが疎ましくなって、見ているだけで不愉快になってきて、家をのっとられるかも、だったらその前に！」",
+			NULL, "\"그러는 사이 점점 더 리나 씨가 미워지고 보기만 해도 불쾌해져서, 집을 빼앗길지도 모른다면 그 전에!\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200296.「…なんて考えてたら、またレナのところに来たの！kvS14/02/210200297.　オヤシロさまがっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200296", 256, TRUE);
+	OutputLine(NULL, "「…なんて考えてたら、またレナのところに来たの！",
+			NULL, "\"...같은 생각을 했더니 또다시 레나에게 찾아왔어! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200297", 256, TRUE);
+	OutputLine(NULL, "　オヤシロさまがっ！」",
+			NULL, "오야시로님이!\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100887.「レナ…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100887", 256, TRUE);
+	OutputLine(NULL, "「レナ…！」",
+			NULL, "\"레나...!\" ", Line_Normal);
+	ClearMessage();
+
+//rがたがたと、見ていてわかるほどに怯えて震えるレナ。あまりの怖がりように、梨花ちゃんはレナのそばに駆け寄り、その小さな身体で抱きしめた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "がたがたと、見ていてわかるほどに怯えて震えるレナ。あまりの怖がりように、梨花ちゃんはレナのそばに駆け寄り、その小さな身体で抱きしめた。",
+			NULL, "바들바들, 딱 봐도 알 정도로 겁에 질려 떠는 레나. 몹시 겁먹은 모습에 리카쨩이 레나에게 달려가 작은 몸으로 레나를 감싸 안는다. ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500588.「…オヤシロさまは、そんな神さまじゃないのです。kvS14/05/210500589.たとえ雛見沢を出て行っても、何も悪いことをしていない人に祟るなんて、そんな神さまはおかしいのですよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500588", 256, TRUE);
+	OutputLine(NULL, "「…オヤシロさまは、そんな神さまじゃないのです。",
+			NULL, "\"오야시로님은 그런 신이 아닌 거예요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500589", 256, TRUE);
+	OutputLine(NULL, "たとえ雛見沢を出て行っても、何も悪いことをしていない人に祟るなんて、そんな神さまはおかしいのですよ」",
+			NULL, "아무리 히나미자와를 떠났다고 해도 아무런 잘못도 하지 않은 사람에게 신벌을 내린다니, 그런 신은 이상한 거예요.\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200298.「だって今でも夢に時々、出てくるんだものっ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200298", 256, TRUE);
+	OutputLine(NULL, "「だって今でも夢に時々、出てくるんだものっ！」",
+			NULL, "\"그치만 지금도 꿈에 가끔씩 나타나는걸!\"", Line_Normal);
+	ClearMessage();
+
+//rレナはぼろぼろと、瞳から涙をこぼしながら叫ぶ。そして、両腕で胸を抱えるようにして震えながら、もはや俺のことなど見えていないように話し続けた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナはぼろぼろと、瞳から涙をこぼしながら叫ぶ。そして、両腕で胸を抱えるようにして震えながら、もはや俺のことなど見えていないように話し続けた。",
+			NULL, "눈에서 눈물을 뚝뚝 쏟으며 소리치던 레나가 양팔로 가슴을 끌어안고 떨면서, 나 같은 건 보이지 않는다는 듯 이야기를 계속한다. ", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+	PlayBGM(2, "hm06_30", 128, 0);
+
+//c900.レナrvS14/02/210200299.「オヤシロさまは言ったの。kvS14/02/210200300.敵意を捨てなさいって。kvS14/02/210200301.お父さんの幸せを心から願いなさいって」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200299", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「オヤシロさまは言ったの。</color>",
+			NULL, "<color=#ff0000>\"오야시로님이 말했어.</color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200300", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>敵意を捨てなさいって。</color>",
+			NULL, "<color=#ff0000>적의를 버리라고. </color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200301", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>お父さんの幸せを心から願いなさいって」</color>",
+			NULL, "<color=#ff0000>아빠의 행복을 진심으로 빌라고.\"</color>", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200302.「だからレナはリナさんとの結婚を祝福するの。kvS14/02/210200303.でなきゃまた祟られちゃう！kvS14/02/210200304.　また変な色のお薬飲まされちゃう！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200302", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「だからレナはリナさんとの結婚を祝福するの。</color>",
+			NULL, "<color=#ff0000>\"그러니 레나는 리나 씨와의 결혼을 축복해 줄 거야.</color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200303", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>でなきゃまた祟られちゃう！</color>",
+			NULL, "<color=#ff0000>축복하지 않으면 또다시 신벌을 받아버려!</color>", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200304", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　また変な色のお薬飲まされちゃう！」</color>",
+			NULL, "<color=#ff0000>또다시 이상한 색의 약을 먹게 돼 버려!\"</color>", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200308.「レナの勝手な思い込みで、せっかくお父さんが掴んだ幸せが壊れちゃったら、またオヤシロさまがレナのところに来ちゃう…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200308", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「レナの勝手な思い込みで、せっかくお父さんが掴んだ幸せが壊れちゃったら、またオヤシロさまがレナのところに来ちゃう…！」</color>",
+			NULL, "<color=#ff0000>\"레나의 고집 때문에 기껏 아빠가 손에 넣은 행복이 망가져 버리면, 오야시로님이 또다시 레나에게 찾아오고 말 거야...!\"</color>", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200309.「レナが悪い子だって、いっぱい責めて、ひたひた、ひたひたって、後ろを追いかけてっ！！kvS14/02/210200310.　ごめんなさい、ごめんなさいって謝ってもずっと、ひたひた、ぺたぺたってついてきて！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200309", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「レナが悪い子だって、いっぱい責めて、ひたひた、ひたひたって、後ろを追いかけてっ！！</color>",
+			NULL, "<color=#ff0000>\"레나가 나쁘다고 끊임없이 책망하면서 뚜벅뚜벅 저벅저벅 뒤를 쫓아와!!</color>", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200310", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　ごめんなさい、ごめんなさいって謝ってもずっと、ひたひた、ぺたぺたってついてきて！！」</color>",
+			NULL, " <color=#ff0000>죄송해요, 죄송해요, 아무리 사죄해도 계속 뚜벅뚜벅 저벅저벅 쫓아와!!\"</color>", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500590.「落ち着くのです、レナ…！kvS14/05/210500591.　誰もいないのです。kvS14/05/210500592.レナも悪いことをしていないから、祟られることはないのです…！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500590", 256, TRUE);
+	OutputLine(NULL, "「落ち着くのです、レナ…！",
+			NULL, "\"레나, 진정하는 거예요...!", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500591", 256, TRUE);
+	OutputLine(NULL, "　誰もいないのです。",
+			NULL, "아무도 없는 거예요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500592", 256, TRUE);
+	OutputLine(NULL, "レナも悪いことをしていないから、祟られることはないのです…！」",
+			NULL, "레나도 잘못한 게 없으니 신벌을 받을 일은 없는 거예요...!\" ", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200311.「早く早く！kvS14/02/210200312.　早く捨てないと、…オヤシロさまの力が消えて、私はまた体を何かに乗っ取られてしまう…！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200311", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「早く早く！</color>",
+			NULL, "<color=#ff0000>\"빨리, 빨리! </color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200312", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　早く捨てないと、…オヤシロさまの力が消えて、私はまた体を何かに乗っ取られてしまう…！！」</color>",
+			NULL, "<color=#ff0000> 빨리 버리지 않으면... 오야시로님의 힘이 사라져서, 또다시 내 몸에 뭔가가 씌어버려...!!\"</color>", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200313.「ああぁ、オヤシロさまがついて来るよ、そして早く早くと私に囁くの！kvS14/02/210200314.　どこまでもついてきて、急げ急げと私を急かす！kvS14/02/210200315.　いつまでもどこまでもついてきて、ずっとずっと言い続けるの！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200313", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「ああぁ、オヤシロさまがついて来るよ、そして早く早くと私に囁くの！</color>",
+			NULL, "<color=#ff0000>\"아아아, 오야시로님이 따라오고 있어. 그리고 빨리 빨리라며 나한테 속삭여!</color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200314", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　どこまでもついてきて、急げ急げと私を急かす！</color>",
+			NULL, "<color=#ff0000> 어디까지고 따라와서, 서둘러 서둘러 하고 나를 재촉해!</color>", GetGlobalFlag(GLinemodeSp));
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200315", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　いつまでもどこまでもついてきて、ずっとずっと言い続けるの！！」</color>",
+			NULL, "<color=#ff0000> 언제까지고 어디까지고 따라와서, 계속 계속 말을 걸어!!\"</color>", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200316.「本当だよ？！kvS14/02/210200317.　本当だってば！！kvS14/02/210200318.　何でみんなには見えないの？！kvS14/02/210200319.　私の言うことなぜ信じないの？！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200316", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「本当だよ？！</color>",
+			NULL, "<color=#ff0000>\"정말이라니까?!</color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200317", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　本当だってば！！</color>",
+			NULL, " <color=#ff0000> 정말이란 말야!!</color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200318", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　何でみんなには見えないの？！</color>",
+			NULL, " <color=#ff0000> 어째서 아무도 못 보는 거야?!</color>", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200319", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>　私の言うことなぜ信じないの？！」</color>",
+			NULL, " <color=#ff0000> 왜 내 말을 믿어주지 않는 거야?!\"</color>", Line_Normal);
+	ClearMessage();
+
+//c900.レナrvS14/02/210200320.「みんなで私を騙しているんだ、みんなにも見えているはずなんだ、いやいややめて、もう注射はいやぁあぁっ…！！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200320", 256, TRUE);
+	OutputLine(NULL, "<color=#ff0000>「みんなで私を騙しているんだ、みんなにも見えているはずなんだ、いやいややめて、もう注射はいやぁあぁっ…！！！」</color>",
+			NULL, "<color=#ff0000>\"다 같이 짜고 나를 속이는 거지? 다들 보이잖아. 싫어, 싫어, 그만. 이제 주사는 싫어어어어...!!!\"</color>", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100888.「――レナっ！！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100888", 256, TRUE);
+	OutputLine(NULL, "「——レナっ！！」",
+			NULL, "\"...레나!!\" ", Line_Normal);
+	ClearMessage();
+
+	FadeOutBGM(2, 200, FALSE);
+	PlaySE(3, "k1-swing", 256, 64);
+	DrawScene("white", 150 );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 5, "sprite/ri2_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 100, FALSE );
+	DrawScene("background/re_h3", 150 );
+	PlaySE(3, "garasu", 256, 64);
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 500 );
+	PlayBGM( 1, "semi", 128, 0 );
+
+//レナrvS14/02/210200322.「はぁ、はぁ、はぁ、はぁっ……！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200322", 256, TRUE);
+	OutputLine(NULL, "「はぁ、はぁ、はぁ、はぁっ……！」",
+			NULL, "\"하아, 하아, 하아, 하아......!\" ", Line_Normal);
+	ClearMessage();
+
+//r荒い息をつきながら、ようやく落ち着いたのかぐったりとなった様子で、レナは俺と梨花ちゃんの腕に抱かれておとなしくなった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "荒い息をつきながら、ようやく落ち着いたのかぐったりとなった様子で、レナは俺と梨花ちゃんの腕に抱かれておとなしくなった。",
+			NULL, "거친 숨을 몰아쉬다가 겨우 진정됐는지, 레나가 축 늘어진 채 나와 리카쨩 품에 안겨 얌전해진다. ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100889.「……落ち着いたか、レナ…？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100889", 256, TRUE);
+	OutputLine(NULL, "「……落ち着いたか、レナ…？」",
+			NULL, "\"...레나, 진정됐어?\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500593.「……レナ、大丈夫なのですか？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500593", 256, TRUE);
+	OutputLine(NULL, "「……レナ、大丈夫なのですか？」",
+			NULL, "\"...레나, 괜찮은 건가요?\" ", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200323.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200323", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"......\"    ", Line_Normal);
+	ClearMessage();
+
+//rこくり、とかすかに頷くレナ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "こくり、とかすかに頷くレナ。",
+			NULL, "끄덕, 살짝 고개를 끄덕이는 레나.  ", Line_Normal);
+	ClearMessage();
+
+//rその全身はびっしょりと汗をかいて、まだ小刻みに震えている。…それでも、さっきまでの錯乱した雰囲気は影を潜め、俺と梨花ちゃんは顔を見合わせ、ほっとため息をついた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "その全身はびっしょりと汗をかいて、まだ小刻みに震えている。…それでも、さっきまでの錯乱した雰囲気は影を潜め、俺と梨花ちゃんは顔を見合わせ、ほっとため息をついた。",
+			NULL, "레나의 온몸은 땀에 흠뻑 젖어, 아직도 조금씩 떨리고 있지만... 방금까지의 착란은 멎은 듯해서, 나와 리카쨩은 얼굴을 마주하고 휴우 한숨을 내쉰다.", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200324.「……ごめんね…。kvS14/02/210200325.私…取り乱して……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200324", 256, TRUE);
+	OutputLine(NULL, "「……ごめんね…。",
+			NULL, "\"...미안해. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200325", 256, TRUE);
+	OutputLine(NULL, "私…取り乱して……」",
+			NULL, "나... 정신을 잃어서....\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100890.「――いや、平気だぜ。kvS14/01/210100891.これくらいさ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100890", 256, TRUE);
+	OutputLine(NULL, "「——いや、平気だぜ。",
+			NULL, "\"...아냐, 괜찮아. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100891", 256, TRUE);
+	OutputLine(NULL, "これくらいさ」",
+			NULL, " 이 정도쯤이야.\"", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500594.「…みぃ……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500594", 256, TRUE);
+	OutputLine(NULL, "「…みぃ……」",
+			NULL, "\"미이....\" ", Line_Normal);
+	ClearMessage();
+
+//r梨花ちゃんは心配そうに見上げながら、レナをぎゅっと抱きしめる力を、まだ緩めない。そんな梨花ちゃんの懸命な真摯さが伝わったのか、レナの顔が徐々に赤らみを帯びてきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "梨花ちゃんは心配そうに見上げながら、レナをぎゅっと抱きしめる力を、まだ緩めない。そんな梨花ちゃんの懸命な真摯さが伝わったのか、レナの顔が徐々に赤らみを帯びてきた。",
+			NULL, "걱정스레 레나를 올려다보며, 레나를 계속해서 꼭 끌어안는 리카쨩. 리카쨩의 필사적인 정성이 전해졌는지, 레나의 얼굴에 서서히 핏기가 돌기 시작한다.", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200326.「……信じてくれないかもしれないけど、レナは…確かにオヤシロさまに会ったの。kvS14/02/210200327.だから、また来たときは怖くて、不安で、逃げたい気持ちでわけがわからなくなって…。kvS14/02/210200328.だから……もう……」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200326", 256, TRUE);
+	OutputLine(NULL, "「……信じてくれないかもしれないけど、レナは…確かにオヤシロさまに会ったの。",
+			NULL, "\"...믿기지 않을지도 모르지만, 레나는... 틀림없이 오야시로님과 만났어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200327", 256, TRUE);
+	OutputLine(NULL, "だから、また来たときは怖くて、不安で、逃げたい気持ちでわけがわからなくなって…。",
+			NULL, "그래서 다시 찾아왔을 때, 무섭고 불안하고 도망치고 싶은 나머지 뭐가 뭔지 알 수 없어져서.... ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200328", 256, TRUE);
+	OutputLine(NULL, "だから……もう……」",
+			NULL, "그래서... 더이상....\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100892.「……わかった」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100892", 256, TRUE);
+	OutputLine(NULL, "「……わかった」",
+			NULL, "\"...이해해.\"", Line_Normal);
+	ClearMessage();
+
+	FadeBustshot(4, FALSE, 0, 0, 0, 0, 200, TRUE);
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2a_bikkuri_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200329.「――――え？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200329", 256, TRUE);
+	OutputLine(NULL, "「————え？」",
+			NULL, "\"......응?\" ", Line_Normal);
+	ClearMessage();
+
+//r俺の肯定の言葉に、レナは思わず顔を上げて俺を見た。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺の肯定の言葉に、レナは思わず顔を上げて俺を見た。",
+			NULL, "내 긍정의 말에 레나가 반사적으로 얼굴을 들고 나를 바라본다.", Line_Normal);
+	ClearMessage();
+
+//rそれはひょっとしたら、あっさりすぎるかもと自分でも思えるくらいの言葉。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それはひょっとしたら、あっさりすぎるかもと自分でも思えるくらいの言葉。",
+			NULL, "어찌 보면 스스로 생각해도 터무니없을 정도로 간단히 나온 말이었다. ", Line_Normal);
+	ClearMessage();
+
+	DrawScene("white", 1000 );
+
+//rでも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "でも。",
+			NULL, "하지만. ", Line_Normal);
+	ClearMessage();
+
+//rそれはいい加減なその場しのぎではなく、本心から出たものだと、胸張って言える。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それはいい加減なその場しのぎではなく、本心から出たものだと、胸張って言える。",
+			NULL, "적당히 상황을 벗어나기 위해 한 말이 아니라, 본심에서 우러나온 말이라고 자신 있게 말할 수 있다. ", Line_Normal);
+	ClearMessage();
+
+	if (GetLocalFlag(LConsoleArc)==10) {
+	//rだって、俺は今のレナの話で、ようやく忘れかけていた『あのこと』をはっきりと、思い出すことができたんだから……！
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "だって、俺は今のレナの話で、ようやく忘れかけていた『あのこと』をはっきりと、思い出すことができたんだから……！",
+				NULL, "And thanks to what 레나 said just now, I could finally remember <i>that thing</i> I had nearly forgotten...!", Line_Normal);
+	} else {
+	//r怖くて、不安で…逃げ出したくなるほどのつらさ。そこから踏み出す勇気を持つことがどんなに大変か、俺にも理解できるつもりだ…。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "怖くて、不安で…逃げ出したくなるほどのつらさ。そこから踏み出す勇気を持つことがどんなに大変か、俺にも理解できるつもりだ…。",
+				NULL, "무섭고 불안해서... 도망쳐 버리고 싶어질 정도의 고통. 그 고통 속에서 걸음을 내디딜 용기를 내는 일이 얼마나 힘든지는 나도 잘 안다. ", Line_Normal);
+	}
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModDrawCharacter(3, 2, "sprite/re2a_bikkuri_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, FALSE );
+	DrawScene("background/re_h3", 1000 );
+
+//圭一rvS14/01/210100893.「レナが嘘をつくなんて、絶対にありえないしな。kvS14/01/210100894.それに、そこまでレナが怖がるってのは、単なる夢とかじゃないと思う。kvS14/01/210100895.…俺は、その話…信じるよ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100893", 256, TRUE);
+	OutputLine(NULL, "「レナが嘘をつくなんて、絶対にありえないしな。",
+			NULL, "\"레나가 거짓말을 한다니, 절대 있을 수 없는 일이야. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100894", 256, TRUE);
+	OutputLine(NULL, "それに、そこまでレナが怖がるってのは、単なる夢とかじゃないと思う。",
+			NULL, "그리고 레나가 이렇게까지 두려워한다면, 단순한 꿈은 아닐 테고. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100895", 256, TRUE);
+	OutputLine(NULL, "…俺は、その話…信じるよ」",
+			NULL, "...나는 그 이야기... 믿어.\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200330.「…………」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200330", 256, TRUE);
+	OutputLine(NULL, "「…………」",
+			NULL, "\"......\"    ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100896.「オヤシロさまがそういったのなら、仕方がないさ。kvS14/01/210100897.…悪かったな、ひどいこと言ってレナを困らせて。kvS14/01/210100898.本当にすまん、…もうこの話は、止めにしよう」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100896", 256, TRUE);
+	OutputLine(NULL, "「オヤシロさまがそういったのなら、仕方がないさ。",
+			NULL, "\"오야시로님이 시켰다면 어쩔 수 없지. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100897", 256, TRUE);
+	OutputLine(NULL, "…悪かったな、ひどいこと言ってレナを困らせて。",
+			NULL, "...미안해, 레나를 곤란하게 하는 말을 해서. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100898", 256, TRUE);
+	OutputLine(NULL, "本当にすまん、…もうこの話は、止めにしよう」",
+			NULL, "정말로 미안... 이 얘기는 이만 그만두자.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_nande_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200331.「け、圭一くん…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200331", 256, TRUE);
+	OutputLine(NULL, "「け、圭一くん…」",
+			NULL, "\"케, 케이이치 군...\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS14/05/210500595.「圭一――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500595", 256, TRUE);
+	OutputLine(NULL, "「圭一——」",
+			NULL, "\"케이이치....\"", Line_Normal);
+	ClearMessage();
+
+//rレナと梨花ちゃんは、それぞれ複雑な表情で俺を見つめる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナと梨花ちゃんは、それぞれ複雑な表情で俺を見つめる。",
+			NULL, "레나와 리카쨩이 제각기 복잡한 표정으로 나를 쳐다본다. ", Line_Normal);
+	ClearMessage();
+
+//r…詩音の情報は、おそらく真実だろう。それでも、真実や周囲の道理を通すことが、必ずしも幸せになるとは限らない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…詩音の情報は、おそらく真実だろう。それでも、真実や周囲の道理を通すことが、必ずしも幸せになるとは限らない。",
+			NULL, "...시온이 알려준 정보는 분명 진실일 것이다. 그러나 진실이나 순리대로 행동한들 반드시 행복으로 이어진다고는 할 수 없다. ", Line_Normal);
+	ClearMessage();
+
+//rまして、レナにとってオヤシロさまという存在は、絶対的なものなんだろう。いわば価値観であり、レナの正義だ。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "まして、レナにとってオヤシロさまという存在は、絶対的なものなんだろう。いわば価値観であり、レナの正義だ。",
+			NULL, "더욱이 레나에게 오야시로님이라는 존재는 절대적이다. 말하자면 가치관이자 정의나 마찬가지.", Line_Normal);
+	ClearMessage();
+
+//r…だとしたら、それを否定して自分の価値観を押し付けるのではなく、その可能性の枠内で安寧を見つける手助けをしてやることが、仲間としての役割なんじゃないだろうか。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	if (GetGlobalFlag(GADVMode)) { OutputLine(NULL, "", NULL, "<size=-2>", Line_Continue); }
+	OutputLine(NULL, "…だとしたら、それを否定して自分の価値観を押し付けるのではなく、その可能性の枠内で安寧を見つける手助けをしてやることが、仲間としての役割なんじゃないだろうか。",
+			NULL, "...그렇다면 오야시로님을 부정하고 자신의 가치관을 강요할 게 아니라, 가능성의 범주 내에서 평안을 찾아내도록 도와주는 게 친구의 역할이 아닐까. ", Line_Normal);
+	ClearMessage();
+
+//r…そう、俺は思った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そう、俺は思った。",
+			NULL, "...나는 그렇게 생각한다. ", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "addse12", 256, 64);
+	Wait( 1000 );
+	PlaySE(4, "addse28", 256, 64);
+
+//r丁度その時、家の外で大きなエンジン音が聞こえる。それは軽い地響きとともにレナの家の前でひときわ大きくなり、車の停まる気配が伝わってきた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "丁度その時、家の外で大きなエンジン音が聞こえる。それは軽い地響きとともにレナの家の前でひときわ大きくなり、車の停まる気配が伝わってきた。",
+			NULL, "그 순간 집 밖에서 큰 엔진음이 들려온다. 가벼운 땅울림과 함께 엔진음이 레나네 집 앞에서 확연히 커지다가, 차가 멈춰서는 기척이 느껴진다. ", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "interfon2", 256, 64);
+
+//rピンポーン！　ピンポン、ピンポーン！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "ピンポーン！　ピンポン、ピンポーン！",
+			NULL, "띵동~! 띵동, 띵동!", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_bikkuri_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200332.「え…何かな？kvS14/02/210200333.　…ごめん、ちょっと行ってくるね」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200332", 256, TRUE);
+	OutputLine(NULL, "「え…何かな？",
+			NULL, "\"어... 무슨 일일까나? ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200333", 256, TRUE);
+	OutputLine(NULL, "　…ごめん、ちょっと行ってくるね」",
+			NULL, "...미안, 잠깐 갔다 올게.\" ", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "addse14", 128, 0 );
+	FadeBustshot(3, FALSE, 0, 0, 0, 0, 200, TRUE);
+	FadeOutBGM(1, 200, TRUE);
+	ModDrawCharacter(5, 5, "sprite/ri2_fuman_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//rレナは赤くなった目尻から涙を拭うと、立ち上がって部屋を出て行く。俺と梨花ちゃんは、無言でそれを見送った。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナは赤くなった目尻から涙を拭うと、立ち上がって部屋を出て行く。俺と梨花ちゃんは、無言でそれを見送った。",
+			NULL, "레나가 빨개진 눈가에서 눈물을 닦고는 일어나 방을 나서자, 나와 리카쨩은 말없이 배웅한다. ", Line_Normal);
+	ClearMessage();
+
+//運送屋rvS14/00/unso10001.「失礼しまーす！kvS14/00/unso10002.　お荷物、どちらに運びましょうかー？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>運送屋</color>", NULL, "<color=#f5e6d3>배달원</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/unso10001", 256, TRUE);
+	OutputLine(NULL, "「失礼しまーす！",
+			NULL, "\"실례합니다~! ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 0, "ps3/s14/00/unso10002", 256, TRUE);
+	OutputLine(NULL, "　お荷物、どちらに運びましょうかー？」",
+			NULL, "물건, 어디에 두면 될까요~?\" ", Line_Normal);
+	ClearMessage();
+
+	if (GetLocalFlag(LConsoleArc)==10) {
+	//r運送業者らしい張りのある声が、家の中にまで聞こえてくる。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "運送業者らしい張りのある声が、家の中にまで聞こえてくる。",
+				NULL, "I heard the firm voice of a deliveryman echoing through the house.", Line_Normal);
+	} else {
+	//r運送業者らしい張りのある声が、この２階の部屋にまで響いてくる。…それを聞き流しながら、俺と梨花ちゃんは顔を見合わせた。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "運送業者らしい張りのある声が、この２階の部屋にまで響いてくる。…それを聞き流しながら、俺と梨花ちゃんは顔を見合わせた。",
+				NULL, "배송업자로 짐작되는 힘찬 목소리가 2층에 있는 이 방까지 들려온다.... 나와 리카쨩은 그 소리를 흘려들으며 얼굴을 마주한다. ", Line_Normal);
+	}
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri2_majime_a1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS14/05/210500596.「――圭一」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500596", 256, TRUE);
+	OutputLine(NULL, "「——圭一」",
+			NULL, "\"...케이이치.\" ", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100899.「わかってる。kvS14/01/210100900.…けど、これ以上は本当に押し付けだ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100899", 256, TRUE);
+	OutputLine(NULL, "「わかってる。",
+			NULL, "\"알고 있어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100900", 256, TRUE);
+	OutputLine(NULL, "…けど、これ以上は本当に押し付けだ」",
+			NULL, "...그치만, 더 했다간 정말로 강요가 되어 버려.\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 5, "sprite/ri2_komaru_a2_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//梨花rvS14/05/210500597.「……みぃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500597", 256, TRUE);
+	OutputLine(NULL, "「……みぃ」",
+			NULL, "\"......미이.\" ", Line_Normal);
+	ClearMessage();
+
+//r梨花ちゃんはため息をついて、肩を落とす。…実際俺もここまで拒絶されるとは思っていなかったので、落胆の気持ちを禁じえなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "梨花ちゃんはため息をついて、肩を落とす。…実際俺もここまで拒絶されるとは思っていなかったので、落胆の気持ちを禁じえなかった。",
+			NULL, "리카쨩이 한숨을 내쉬고 어깨를 늘어뜨린다.... 확실히 나도 이 정도로 거부감을 보일 거라곤 생각지 못했기에 실망이 크다.", Line_Normal);
+	ClearMessage();
+
+}
