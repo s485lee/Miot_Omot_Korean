@@ -59,7 +59,7 @@ void main()
 	if (GetGlobalFlag(GChoiceMode) == 0) {
 		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 		OutputLine(NULL, "<color=#aaaaaa>『レナはその人のこと、どう思っていますか？』</color>",
-				NULL, "<color=#aaaaaa>[레나, what do you think of her?]</color>", Line_Normal);
+				NULL, "<color=#aaaaaa>[Rena, what do you think of her?]</color>", Line_Normal);
 		ClearMessage();
 
 		SetGlobalFlag(GConsoleChoice, 1);
@@ -76,8 +76,8 @@ void main()
 
 		if(GetGlobalFlag(GLanguage) == 1)
 		{
-			OmoteChoice9[0] = "그 사람은 나쁜 사람이야.";
-			OmoteChoice9[1] = "레나는 그 사람에 대해 어떻게 생각해?";
+			OmoteChoice9[0] = "그 사람은 나쁜 사람이예요.";
+			OmoteChoice9[1] = "레나는 그 사람에 대해 어떻게 생각해요?";
 		}
 		else
 		{
