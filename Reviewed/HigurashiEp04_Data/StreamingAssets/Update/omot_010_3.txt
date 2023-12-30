@@ -220,7 +220,7 @@ void main()
 		if(GetGlobalFlag(GLanguage) == 1)
 		{
 			OmoteChoice10[0] = "화내지 마세요, 레나.";
-			OmoteChoice10[1] = "내가 케이이치에게 상담한 거야.";
+			OmoteChoice10[1] = "내가 케이이치에게 상담한 거예요.";
 		}
 		else
 		{
