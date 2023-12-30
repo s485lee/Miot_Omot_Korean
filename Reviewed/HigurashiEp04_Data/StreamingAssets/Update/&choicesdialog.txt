@@ -1,0 +1,30 @@
+﻿void main()
+{
+	ModEnableNVLModeInADVMode();
+	DrawScene("black", 1000 );
+	OutputLine(NULL, "この編には、会話の変更をもたらし、悪い結末を招く可能性のある選択が含まれます。この選択を見たいですか？",
+		   NULL, "이번 작품에는 다른 결말을 초래 할 수있는 선택들이 포함됩니다. 어떠한 방법으로 작품을 감상하시겠습니까?", Line_Normal);
+
+	DrawBustshotWithFiltering( 6, "3choices", "left", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 250, TRUE );
+
+	char ChoiceMode[3];
+
+	if (GetGlobalFlag(GLanguage) == 1) {
+		ChoiceMode[0] = "선택지를 표시하지 않고 좋은 결말으로 진행합니다.";
+		ChoiceMode[1] = "선택지를 표시합니다.";
+		ChoiceMode[2] = "선택지를 표시하고 올바른 답안을 강조해 표시합니다.";
+	} else {
+		ChoiceMode[0] = "追加した選択を見せません。ＰＣ版内容だけ見せます";
+		ChoiceMode[1] = "コンソール版に追加した選択を見せます";
+		ChoiceMode[2] = "選択を見せながら正解に記号をつける";
+	}
+
+	Select( 3, ChoiceMode );
+
+	SetGlobalFlag(GChoiceMode, LoadValueFromLocalWork(SelectResult));
+
+	ModDisableNVLModeInADVMode();
+	DisableWindow();
+	DrawScene("black", 250 );
+
+}

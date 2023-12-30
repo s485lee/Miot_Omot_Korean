@@ -1,0 +1,69 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 10 choice 5
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	ModSetLayerFilter(5, 256, "none");
+	ModDrawCharacter(5, 1, "sprite/kei2_majime_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, FALSE );
+	ModSetLayerFilter(3, 256, "none");
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//レナrvS14/02/210200231.「…別に、怒ってないよ。kvS14/02/210200232.変なこと言わないでくれるかな、梨花ちゃん？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200231", 256, TRUE);
+	OutputLine(NULL, "「…別に、怒ってないよ。",
+			NULL, "\"...딱히 화나진 않았어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200232", 256, TRUE);
+	OutputLine(NULL, "変なこと言わないでくれるかな、梨花ちゃん？」",
+			NULL, " 리카쨩, 이상한 소리 하지 말아줄래?\"", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(5, 1, "sprite/kei2_ikari1_", "0", -160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 18, 200, TRUE );
+
+//圭一rvS14/01/210100840.「その言い方が怒ってるって事じゃないか！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100840", 256, TRUE);
+	OutputLine(NULL, "「その言い方が怒ってるって事じゃないか！」",
+			NULL, "\"그 말투의 어디가 화가 안 났다는 거야!\"", Line_Normal);
+	ClearMessage();
+
+//レナrvS14/02/210200233.「――」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f0953d>レナ</color>", NULL, "<color=#f0953d>레나</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 2, "ps3/s14/02/210200233", 256, TRUE);
+	OutputLine(NULL, "「——」",
+			NULL, "\"......\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_komaru_a2_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//rレナの瞳が、かすかに揺れる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナの瞳が、かすかに揺れる。",
+			NULL, "레나의 눈동자가 살짝 흔들린다. ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(3, 2, "sprite/re2a_okoru_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
+
+//rが、きっと圭一に対してレナは一瞥すると、不愉快そうに視線をそらして苛立たしげに髪をいじる。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "が、きっと圭一に対してレナは一瞥すると、不愉快そうに視線をそらして苛立たしげに髪をいじる。",
+			NULL, "그러나 레나는 케이이치를 잠깐 쳐다보다가, 이내 불쾌하다는 듯 시선을 돌리고는 초조하게 머리카락을 만지작거린다.", Line_Normal);
+	ClearMessage();
+
+//r…どうして？　レナ、なんでそんな目をするの…？
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…どうして？　レナ、なんでそんな目をするの…？",
+			NULL, "...어째서? 레나, 왜 그런 눈을 하는 거야...? ", Line_Normal);
+	ClearMessage();
+
+//rなおも言い続けようとしたが、そんな私を圭一は手で制する。そして、話を続けた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "なおも言い続けようとしたが、そんな私を圭一は手で制する。そして、話を続けた。",
+			NULL, "케이이치가 손을 내밀어, 말을 계속하려는 나를 제지하고는 이야기를 이어나간다.", Line_Normal);
+	ClearMessage();
+
+}

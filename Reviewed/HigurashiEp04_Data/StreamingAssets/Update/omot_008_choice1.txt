@@ -1,0 +1,150 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Day 8 choice 1
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+//圭一rvS14/01/210100603.「……それで、沙都子は救われるんだな？」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100603", 256, TRUE);
+	OutputLine(NULL, "「……それで、沙都子は救われるんだな？」",
+			NULL, "\"...그러면 사토코는 구원받는 거지?\" ", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "semi", 128, 0 );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 5, "sprite/ri1_komaru_a2_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//梨花rvS14/05/210500456.「……みぃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500456", 256, TRUE);
+	OutputLine(NULL, "「……みぃ」",
+			NULL, "\"...미이.\" ", Line_Normal);
+	ClearMessage();
+
+//r暗い表情のまま、梨花ちゃんは頷く。…それでも、後ろめたい躊躇を取り払うことができないのか、目を伏せたままじっと、手元の瓶を見つめていた。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "暗い表情のまま、梨花ちゃんは頷く。…それでも、後ろめたい躊躇を取り払うことができないのか、目を伏せたままじっと、手元の瓶を見つめていた。",
+			NULL, "리카쨩이 어두운 표정 그대로 고개를 끄덕이더니, 망설임과 꺼림칙함을 떨쳐내지는 못했는지 눈을 내리깐 채 손에 든 병만 빤히 쳐다본다.", Line_Normal);
+	ClearMessage();
+
+//圭一rvS14/01/210100604.「……わかった。kvS14/01/210100605.それが一番いい方法なら、梨花ちゃんの言うとおりにしよう。kvS14/01/210100606.いいんだよな、それで？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100604", 256, TRUE);
+	OutputLine(NULL, "「……わかった。",
+			NULL, "\"...알았어. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100605", 256, TRUE);
+	OutputLine(NULL, "それが一番いい方法なら、梨花ちゃんの言うとおりにしよう。",
+			NULL, "가장 좋은 방법이 그거라면 리카쨩 말대로 하자. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100606", 256, TRUE);
+	OutputLine(NULL, "いいんだよな、それで？」",
+			NULL, "그럼 되는 거지?\" ", Line_Normal);
+	ClearMessage();
+
+	ModDrawCharacter(4, 5, "sprite/ri1_fuman_a1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//梨花rvS14/05/210500457.「…お願いしますのです。kvS14/05/210500458.沙都子には少しの間、辛い思いをさせてしまいますが…きっと…」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500457", 256, TRUE);
+	OutputLine(NULL, "「…お願いしますのです。",
+			NULL, "\"...부탁하는 거예요. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500458", 256, TRUE);
+	OutputLine(NULL, "沙都子には少しの間、辛い思いをさせてしまいますが…きっと…」",
+			NULL, "사토코가 당분간 괴로운 경험을 하게 되겠지만... 반드시...\" ", Line_Normal);
+	ClearMessage();
+
+//rそう言いながらも。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そう言いながらも。",
+			NULL, "말은 그렇게 하지만. ", Line_Normal);
+	ClearMessage();
+
+//r梨花ちゃんは瓶を固く握り締めたまま、唇をかみ締めている。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "梨花ちゃんは瓶を固く握り締めたまま、唇をかみ締めている。",
+			NULL, "리카쨩이 병을 꽉 쥔 채 입술을 깨문다.", Line_Normal);
+	ClearMessage();
+
+	if (GetLocalFlag(LConsoleArc)==10) {
+	//rその、耐えている様子に俺はそれ以上何も言えず、手元のサイダ一を一気に飲み干した。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "その、耐えている様子に俺はそれ以上何も言えず、手元のサイダ一を一気に飲み干した。",
+				NULL, "그 뭔가를 참아내는 모습에 나도 더 이상 아무 말 하지 못하고, 손에 쥔 포도 주스를 단숨에 들이켠다", Line_Normal);
+		ClearMessage();
+
+	//r……喉元がいがらっぽく痛んだのは、炭酸だけのせいじゃなかったかもしれない。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "……喉元がいがらっぽく痛んだのは、炭酸だけのせいじゃなかったかもしれない。",
+				NULL, "...목구멍이 아릿하게 아픈 건, 미지근해진 포도 주스의 단맛 때문만은 아니겠지.", Line_Normal);
+		ClearMessage();
+	} else {
+	//rその、耐えている様子に俺はそれ以上何も言えず、手元のグレープジュースを一気に飲み干した。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "その、耐えている様子に俺はそれ以上何も言えず、手元のグレープジュースを一気に飲み干した。",
+				NULL, "그 뭔가를 참아내는 모습에 나도 더 이상 아무 말 하지 못하고, 손에 쥔 포도 주스를 단숨에 들이켠다", Line_Normal);
+		ClearMessage();
+
+	//r…喉元がいがらっぽく痛んだのは、ぬるくなった甘さのせいだけじゃなかったのかもしれない。
+		if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+		OutputLine(NULL, "…喉元がいがらっぽく痛んだのは、ぬるくなった甘さのせいだけじゃなかったのかもしれない。",
+				NULL, "...목구멍이 아릿하게 아픈 건, 미지근해진 포도 주스의 단맛 때문만은 아니겠지.", Line_Normal);
+		ClearMessage();
+	}
+
+	DrawScene("black", 1000 );
+	FadeOutBGM(1, 200, TRUE);
+
+//rしばらくの間、俺たちは無言で座り続けていたが、…日暮れが近くなったのに気づき、俺はその場を立ち上がった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "しばらくの間、俺たちは無言で座り続けていたが、…日暮れが近くなったのに気づき、俺はその場を立ち上がった。",
+			NULL, "한동안 말없이 쭉 앉아있다가... 저녁이 가까워졌음을 깨닫고 내가 먼저 자리에서 일어난다. ", Line_Normal);
+	ClearMessage();
+
+	PlayBGM( 1, "higurasi", 128, 0 );
+	DrawScene("background/ji2_01", 1000 );
+
+//圭一rvS14/01/210100607.「…それじゃ、俺は帰るよ。kvS14/01/210100608.また明日」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100607", 256, TRUE);
+	OutputLine(NULL, "「…それじゃ、俺は帰るよ。",
+			NULL, "\"...이만 먼저 돌아갈게. ", Line_WaitForInput);
+	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100608", 256, TRUE);
+	OutputLine(NULL, "また明日」",
+			NULL, "내일 보자.\" ", Line_Normal);
+	ClearMessage();
+
+//梨花rvS14/05/210500459.「……みぃ」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#6972c1>梨花</color>", NULL, "<color=#6972c1>리카</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500459", 256, TRUE);
+	OutputLine(NULL, "「……みぃ」",
+			NULL, "\"...미이.\" ", Line_Normal);
+	ClearMessage();
+
+//r俺は複雑な気分のまま、神社を後にする。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "俺は複雑な気分のまま、神社を後にする。",
+			NULL, "복잡한 기분인 채로 신사를 뒤로한다. ", Line_Normal);
+	ClearMessage();
+
+//r石段を降りる途中振り返ると、…梨花ちゃんはうつむいたままだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "石段を降りる途中振り返ると、…梨花ちゃんはうつむいたままだった。",
+			NULL, "돌계단을 내려가는 도중에 돌아본 리카쨩은... 계속 고개를 숙이고 있었다. ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

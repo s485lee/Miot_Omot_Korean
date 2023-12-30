@@ -1,0 +1,115 @@
+void main()
+{
+
+
+//*Miotsukushi Omote TIPS 4
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//忘れ物
+
+	DrawScene("white", 1000 );
+	PlayBGM( 1, "semi", 128, 0 );
+	DrawScene("background/ji6", 1000 );
+
+//長老rvS20/00/VTT_elderA3001.「おう、お疲れさん！　みんな、祭りの大仕事の翌日にすまんのぅ～！」
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>長老</color>", NULL, "<color=#f5e6d3>노인</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_eldera3001", 256, TRUE);
+	OutputLine(NULL, "「おう、お疲れさん！　みんな、祭りの大仕事の翌日にすまんのぅ～！」",
+			NULL, "\"오, 고생들이 많구만! 모두 힘든 축제를 마친 다음 날인데 미안허이~!\"", Line_Normal);
+	ClearMessage();
+
+//村人rvS20/00/VTT_muraA3001.「いやいや、これくらいはへーともないわい！　ここはワシらの守り神様のお住まいじゃからのう。ちゃんと綺麗に掃き清めていかんとバチぃ当たるってもんじゃ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_muraa3001", 256, TRUE);
+	OutputLine(NULL, "「いやいや、これくらいはへーともないわい！　ここはワシらの守り神様のお住まいじゃからのう。ちゃんと綺麗に掃き清めていかんとバチぃ当たるってもんじゃ！」",
+			NULL, "\"아니 아니, 이 정도는 전혀 문제없지! 여기는 우리 마을 신불을 모시는 곳이니까. 제대로 깨끗하게 청소하지 않으면 천벌이 내릴겨!\"", Line_Normal);
+	ClearMessage();
+
+//村人rvS20/00/VTT_muraB3001.「それに、昨日の梨花ちゃまの演舞を見ちょったら、元気付けられての～！　いよいよこの神社も、ワシらの手で守っていかねばならんっちゅう気になったわ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_murab3001", 256, TRUE);
+	OutputLine(NULL, "「それに、昨日の梨花ちゃまの演舞を見ちょったら、元気付けられての～！　いよいよこの神社も、ワシらの手で守っていかねばならんっちゅう気になったわ！」",
+			NULL, "\"게다가, 어제 리카쨔마의 연무를 봐서인지 기운이 도는구먼~! 확실히, 이 신사도 우리 손으로 지켜야지 않겠는감!\" ", Line_Normal);
+	ClearMessage();
+
+//村人rvS20/00/VTT_muraA3002.「わっはっはっ、確かにそうじゃの～！　…にしても梨花ちゃま、大丈夫かいの？　あの後熱出して、今も寝込んでおるんじゃろ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_muraa3002", 256, TRUE);
+	OutputLine(NULL, "「わっはっはっ、確かにそうじゃの～！　…にしても梨花ちゃま、大丈夫かいの？　あの後熱出して、今も寝込んでおるんじゃろ？」",
+			NULL, "\"와하핫, 듣고 보니 그렇구먼~! ...그건 그렇고, 리카쨔마는 괜찮은가? 연무 후에 열이 나서 지금도 침대에 누워 있담서?\"", Line_Normal);
+	ClearMessage();
+
+//長老rvS20/00/VTT_elderA3002.「なぁに、入江先生が一日休めば大丈夫っていってくれたんじゃ、心配はいらん！　それじゃみんな、ご苦労じゃが祭りの前以上にきれいにするつもりで、いっちょ頼むわ！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>長老</color>", NULL, "<color=#f5e6d3>노인</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_eldera3002", 256, TRUE);
+	OutputLine(NULL, "「なぁに、入江先生が一日休めば大丈夫っていってくれたんじゃ、心配はいらん！　それじゃみんな、ご苦労じゃが祭りの前以上にきれいにするつもりで、いっちょ頼むわ！」",
+			NULL, "\"걱정은 무슨. 이리에 선생님이 하룻밤 쉬면 괜찮을 거라 했으니, 걱정 붙들어 매드라고! 그럼 다들,힘들겠지만 축젯날 전보다 깨끗하게 만든다 생각하고, 깨끗하게 부탁하네!\"", Line_Normal);
+	ClearMessage();
+
+//村人rvS20/00/VTT_muraA3003.「おおっ、任せたらんね！」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_muraa3003", 256, TRUE);
+	OutputLine(NULL, "「おおっ、任せたらんね！」",
+			NULL, "\"암, 맡겨달라고!\"", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	Wait( 1000 );
+	PlaySE(3, "suzu_1", 256, 64);
+	DrawScene("white", 250 );
+	DrawScene("black", 500 );
+	DrawScene("background/ji6", 1000 );
+
+//村人rvS20/00/VTT_muraB3002.「…………おや？　これ、なんじゃね？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_murab3002", 256, TRUE);
+	OutputLine(NULL, "「…………おや？　これ、なんじゃね？」",
+			NULL, "\"......어라? 이게 뭐시여?\"", Line_Normal);
+	ClearMessage();
+
+//村人rvS20/00/VTT_muraA3004.「どうした、椎名のじいさま。なんか見つかったのかい？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_muraa3004", 256, TRUE);
+	OutputLine(NULL, "「どうした、椎名のじいさま。なんか見つかったのかい？」",
+			NULL, "\"왜 그래, 시이나 할아범. 뭐라도 찾은 겐가?\"", Line_Normal);
+	ClearMessage();
+
+//村人rvS20/00/VTT_muraB3003.「いやぁ、この祠のかげにこんなモノが隠れておったわ。えらく重いかばんじゃが……なに入っとるんじゃ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_murab3003", 256, TRUE);
+	OutputLine(NULL, "「いやぁ、この祠のかげにこんなモノが隠れておったわ。えらく重いかばんじゃが……なに入っとるんじゃ？」",
+			NULL, "\"아니, 사당 주변에 이런 게 숨겨져 있었어. 꽤 무거운 가방인디... 뭐가 들어있는교?\"", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "a5_13391", 256, 64);
+	DrawScene("black", 1000 );
+	Wait( 2000 );
+	DrawScene("background/sora", 1000 );
+
+//村人rvS20/00/VTT_muraA3005.「おやぁ～？　こりゃぁ、結構なシロモンじゃぞ。失くした人、きっと困っとるんじゃないかのぅ？」
+	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#f5e6d3>村人</color>", NULL, "<color=#f5e6d3>마을 주민</color>", NULL, Line_ContinueAfterTyping); }
+	ModPlayVoiceLS(4, 0, "ps3/s20/00/vtt_muraa3005", 256, TRUE);
+	OutputLine(NULL, "「おやぁ～？　こりゃぁ、結構なシロモンじゃぞ。失くした人、きっと困っとるんじゃないかのぅ？」",
+			NULL, "\"허허~ 이거 꽤 있어 보이는 물건이구만. 잃어버린 사람이 분명 곤란해하고 있겠어.\"", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	SetValidityOfInput( FALSE );
+	Wait( 3000 );
+	DrawBustshotWithFiltering(6, "cinema", "x", 1, 0, 0, FALSE, 0, 0, 0, 0, 0, 25, 1300, TRUE );
+	DrawBustshot(7, "title02", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 26, 3000, TRUE );
+	Wait( 2000 );
+	DrawBustshot(6, "black", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 25, 3000, TRUE );
+	Wait( 1000 );
+	FadeBustshotWithFiltering( 7, "x", 1, FALSE, 0, 0, 1000, TRUE );
+	DrawScene( "black", 3000 );
+	SetValidityOfInput( TRUE );
+
+}

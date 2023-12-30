@@ -1,0 +1,172 @@
+void main()
+{
+
+
+//*Miotsukushi Omote Bad End 3
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+//＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+	FadeOutBGM( 0, 1000, FALSE  );
+	FadeOutBGM( 1, 1000, FALSE  );
+	FadeOutBGM( 2, 1000, FALSE  );
+	FadeOutBGM( 3, 1000, TRUE );
+
+//BADEND3 (運命に敗北　)
+
+	DrawScene("background/sora6", 1000 );
+	PlayBGM( 1, "higurasi", 128, 0 );
+
+//r…あの時、もう少し留まるべきだったのだろうか。
+	ClearMessage();
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…あの時、もう少し留まるべきだったのだろうか。",
+			NULL, "...그때, 좀 더 머물렀어야 했을까.", Line_Normal);
+	ClearMessage();
+
+//rレナの様子を慮って、俺と梨花ちゃんは彼女に置手紙を残して引き上げたが、…事態はそこから急速に、そして最悪の方向へと進んでしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナの様子を慮って、俺と梨花ちゃんは彼女に置手紙を残して引き上げたが、…事態はそこから急速に、そして最悪の方向へと進んでしまった。",
+			NULL, "레나를 배려하려 레나에게 편지를 써놓고 자리를 떴지만, 사태는 그때부터 급격하게 최악의 상황으로 흘러갔다. ", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	PlayBGM(2, "hm03_17", 128, 0);
+
+//r部屋いっぱいに運び込まれた新品の家具の山を目の前にして、レナはしばらく呆然と立ち尽くしていたが、やがて我に返ると預金通帳をしまっている金庫を調べ…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "部屋いっぱいに運び込まれた新品の家具の山を目の前にして、レナはしばらく呆然と立ち尽くしていたが、やがて我に返ると預金通帳をしまっている金庫を調べ…。",
+			NULL, "레나는 방 안 가득 산처럼 쌓인 새 가구들을 잠시 멍하니 바라보다가, 머지않아 정신을 차리고 예금 통장이 든 금고를 찾아...", Line_Normal);
+	ClearMessage();
+
+//r…そこで彼女は、父親が間宮リナに大量の金をつぎ込んでいるという事実を知ってしまった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…そこで彼女は、父親が間宮リナに大量の金をつぎ込んでいるという事実を知ってしまった。",
+			NULL, "...아버지가 마미야 리나에게 막대한 돈을 쓰고 있다는 사실을 알아챘다. ", Line_Normal);
+	ClearMessage();
+
+//rそして、中に紛れ込んでいた賃貸マンションの部屋案内を見て、興宮の不動産屋を訪れ、…ようやく間宮リナが、父親を騙して金を巻き上げようとしていることを理解したのだった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、中に紛れ込んでいた賃貸マンションの部屋案内を見て、興宮の不動産屋を訪れ、…ようやく間宮リナが、父親を騙して金を巻き上げようとしていることを理解したのだった。",
+			NULL, "그중에 섞여 있던 임대 아파트 입주 내역을 보고 오키노미야의 부동산에 들러... 마침내 마미야 리나의 아버지를 속이고 등쳐먹으려는 계획을 깨닫게 되고. ", Line_Normal);
+	ClearMessage();
+
+	DrawFilm( 2, 0, 0, 0, 128, 0, 250, TRUE );
+	ModSetLayerFilter(4, 256, "none");
+	ModDrawCharacter(4, 2, "sprite/re2b_hig_okoru_b1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );
+
+//r――あいつさえいなければ…あいつさえっ……！！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "——あいつさえいなければ…あいつさえっ……！！",
+			NULL, " '...그년만 없었다면... 그년만...!'", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+	FadeFilm( 250, TRUE );
+	DrawScene("background/mo_g1", 1000 );
+
+//rレナは決意を固め、たった一人で間宮リナの殺害を計画する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "レナは決意を固め、たった一人で間宮リナの殺害を計画する。",
+			NULL, "레나는 결의를 다지고, 혼자서 마미야 리나의 살인을 계획하기에 이른다.", Line_Normal);
+	ClearMessage();
+
+//rそして、俺たちの前ではなに食わぬ様子で振る舞いながら、自分の隠れ場所であるゴミ山に間宮リナをおびき出すことに成功し、…そこでリナの頭を鉈で叩き割って、殺害した。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、俺たちの前ではなに食わぬ様子で振る舞いながら、自分の隠れ場所であるゴミ山に間宮リナをおびき出すことに成功し、…そこでリナの頭を鉈で叩き割って、殺害した。",
+			NULL, "우리 앞에서는 아무렇지도 않게 행동하면서, 자신의 비밀 기지인 쓰레기 산에 마미야 리나를 꾀어서 오게 만들고... 손도끼로 리나의 머리를 내리쳐 살해. ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 1000 );
+	DrawScene("background/ho1", 1000 );
+
+//r…その結果、北条鉄平は興宮で暮らすことが出来ず雛見沢に舞い戻ってきて、沙都子はその叔父の手によって北条家へと帰っていった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その結果、北条鉄平は興宮で暮らすことが出来ず雛見沢に舞い戻ってきて、沙都子はその叔父の手によって北条家へと帰っていった。",
+			NULL, "...그 결과 호죠 텟페이가 오키노미야에서 지내지 못하게 되어, 히나미자와로 돌아와 사토코를 데리고 호죠 가에 살게 되었다. ", Line_Normal);
+	ClearMessage();
+
+//rそれを知ったレナは、自分の日常を壊すやつは許さない――そう言って、鉄平の殺害を決行する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それを知ったレナは、自分の日常を壊すやつは許さない——そう言って、鉄平の殺害を決行する。",
+			NULL, "이를 알게 된 레나는 자신의 일상을 빼앗는 녀석들을 용서할 수 없다며 텟페이의 살해를 결행하고. ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	PlaySE(3, "thisikuki", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu1", "aa", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+	DrawScene("black", 1000 );
+	PlaySE(3, "addse07", 256, 64);
+	DrawSceneWithMask( "background/ryuuketu2", "c", 0, 0, 250 );
+	ShakeScreen( 1, 15, 15, 2, 0, );
+	Wait( 250 );
+
+//r…その事態の異常な速さに、俺と梨花ちゃんはレナを制止することすらできなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…その事態の異常な速さに、俺と梨花ちゃんはレナを制止することすらできなかった。",
+			NULL, "...겉잡을 수 없이 빠르게 틀어지는 상황에, 나와 리카쨩은 레나를 제지하는 것조차 힘겨울 정도였다. ", Line_Normal);
+	ClearMessage();
+
+	DrawScene("black", 1000 );
+
+//rそして、…レナの凶行を遅まきながらようやく知った俺たちは、せめて彼女だけでも守りたいと思い、魅音の力を借りて犯行の隠匿に協力する。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "そして、…レナの凶行を遅まきながらようやく知った俺たちは、せめて彼女だけでも守りたいと思い、魅音の力を借りて犯行の隠匿に協力する。",
+			NULL, "레나의 범행 사실을 뒤늦게나마 알게 된 우리는 적어도 레나만이라도 지키고 싶은 마음에, 미온의 힘을 빌려 범행 은닉에 협력하게 된다.", Line_Normal);
+	ClearMessage();
+
+//r…それが正しいこととは決して思っていなかったが、警察の手にレナを引き渡すことを甘受できない以上、もはや選択肢は他に残されていなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…それが正しいこととは決して思っていなかったが、警察の手にレナを引き渡すことを甘受できない以上、もはや選択肢は他に残されていなかった。",
+			NULL, "옳은 일이라고는 생각하지 않았지만, 레나가 경찰에 잡혀가는 걸 볼 수는 없었기에 어쩔 수 없다고 자기 변명하면서.", Line_Normal);
+	ClearMessage();
+
+	DrawScene("background/aka1", 1000 );
+
+//r…それでも、レナの凶行は止まらなかった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "…それでも、レナの凶行は止まらなかった。",
+			NULL, "하지만, 레나는 폭주를 멈추지 않았다.", Line_Normal);
+	ClearMessage();
+
+//r信じていたもの全て、神にさえも裏切られた彼女の心は、もう崩壊していたのかもしれない。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "信じていたもの全て、神にさえも裏切られた彼女の心は、もう崩壊していたのかもしれない。",
+			NULL, "믿고 있던 전부가, 심지어 신에게까지 배신당한 레나의 마음은, 이미 걷잡을 수 없을 정도로 망가졌던 거겠지.", Line_Normal);
+	ClearMessage();
+
+//r誰も信じることが出来なくなったレナは、俺たちがいつ警察に密告するか…その恐怖に苛まれて、ついに魅音をその手にかけて殺してしまう。次は詩音。そして沙都子。そして…。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "誰も信じることが出来なくなったレナは、俺たちがいつ警察に密告するか…その恐怖に苛まれて、ついに魅音をその手にかけて殺してしまう。次は詩音。そして沙都子。そして…。",
+			NULL, "아무도 믿지 못하게 된 레나는 우리가 언제 경찰에 밀고하지 않을까 같은 공포에 시달리다, 결국 제 손으로 미온을 죽이고 만다. 다음은 시온. 그리고 사토코. 그리고...", Line_Normal);
+	ClearMessage();
+
+	PlaySE(3, "sinzouappaku", 256, 64);
+	Negative( 1000, TRUE );
+
+//r――圭一くんの次は、梨花ちゃんだから。安心してね。あはははははは…！
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "——圭一くんの次は、梨花ちゃんだから。安心してね。あはははははは…！",
+			NULL, " '...케이이치 군 다음은 리카쨩이니까. 안심해. 아하하하하하하하...!'", Line_Normal);
+	ClearMessage();
+
+//rそれが、最後に聞いたレナの言葉だった。
+	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
+	OutputLine(NULL, "それが、最後に聞いたレナの言葉だった。",
+			NULL, "그게 내가 최후에 들은 레나의 목소리였다. ", Line_Normal);
+	ClearMessage();
+
+	DisableWindow();
+	DrawScene("white", 3000 );
+	FadeFilm( 100, FALSE );
+	DrawScene("black", 100 );
+	FadeOutBGM(1, 200, FALSE);
+	FadeOutBGM(2, 200, FALSE);
+
+}
