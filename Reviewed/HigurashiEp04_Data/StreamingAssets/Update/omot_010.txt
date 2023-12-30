@@ -1950,8 +1950,8 @@ void main()
 
 		if(GetGlobalFlag(GLanguage) == 1)
 		{
-			OmoteChoice8[0] = "레나의 아버지 말인데...";
-			OmoteChoice8[1] = "리나 마미야라는 여자 알아?";
+			OmoteChoice8[0] = "레나의 아버지...";
+			OmoteChoice8[1] = "리나 마미야라는 여자 아세요?";
 		}
 		else
 		{
