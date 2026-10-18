@@ -543,7 +543,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#956f6e>圭一</color>", NULL, "<color=#956f6e>케이이치</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100232", 256, TRUE);
 	OutputLine(NULL, "「みんな…。……俺についてこれるかぁぁぁッッッ！！！」",
-			NULL, ""모두들.... 나를 따라올 수 있겠나아아아아!!!\"", Line_Normal);
+			NULL, "\"모두들.... 나를 따라올 수 있겠나아아아아!!!\"", Line_Normal);
 	ClearMessage();
 
 	PlaySE(3, "finish", 256, 64);
@@ -955,7 +955,7 @@ void main()
 	if (GetGlobalFlag(GADVMode)) { OutputLine("<color=#c89a80>入江</color>", NULL, "<color=#c89a80>이리에</color>", NULL, Line_ContinueAfterTyping); }
 	ModPlayVoiceLS(4, 10, "ps3/s14/10/21100015", 256, TRUE);
 	OutputLine(NULL, "「はいはい、沙都子ちゃんの診察はまだですよ？",
-			NULL, ""자, 자, 사토코쨩. 진찰이 아직 남았답니다. ", Line_WaitForInput);
+			NULL, "\"자, 자, 사토코쨩. 진찰이 아직 남았답니다. ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 10, "ps3/s14/10/21100016", 256, TRUE);
 	OutputLine(NULL, "　最後に、注射が残ってますからね」",
 			NULL, "마지막으로 주사가 남아있거든요.\"", Line_Normal);
@@ -1703,7 +1703,7 @@ void main()
 			NULL, "\"...죄송한 거예요. ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 5, "ps3/s14/05/210500155", 256, TRUE);
 	OutputLine(NULL, "意地悪な言い方をしてしまいました」",
-			NULL, "말을 짓궃게 해버렸어요.\" ", Line_Normal);
+			NULL, "말을 짓궂게 해버렸어요.\" ", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(4, 10, "sprite/iri2_def1_", "0", 0, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 19, 200, TRUE );

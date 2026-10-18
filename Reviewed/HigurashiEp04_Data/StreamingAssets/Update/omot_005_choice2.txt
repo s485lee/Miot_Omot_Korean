@@ -78,7 +78,7 @@ void main()
 //rまず、鷹野の正体を知っているのは雛見沢では私と入江、そして時々ここを訪れる連絡役の富竹の３人だ。
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "まず、鷹野の正体を知っているのは雛見沢では私と入江、そして時々ここを訪れる連絡役の富竹の３人だ。",
-			NULL, "우선 히나미자와에서 타카노의 정체를 알고 있는 사람은 나와 이리에, 그리고 종종 마을을 방문하는 연락책인 토미타케, 이 3명이다. \", Line_Normal);
+			NULL, "우선 히나미자와에서 타카노의 정체를 알고 있는 사람은 나와 이리에, 그리고 종종 마을을 방문하는 연락책인 토미타케, 이 3명이다. ", Line_Normal);
 	ClearMessage();
 
 	ModSetLayerFilter(4, 256, "none");

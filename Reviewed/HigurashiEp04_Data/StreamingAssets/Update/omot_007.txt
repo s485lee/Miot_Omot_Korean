@@ -3024,7 +3024,7 @@ void main()
 				NULL, "\"...그렇겠죠.", Line_WaitForInput);
 		ModPlayVoiceLS(4, 5, "ps2/05/210500315", 540, TRUE);
 		OutputLine(NULL, "私の言ってることを信じてもらえたのは、何千回の中のほんの数回だけ」",
-				NULL, " 제가 말하는 걸 믿어준 건, 몇천 번 중에서도 고작 몇 번뿐.\""", Line_Normal);
+				NULL, " 제가 말하는 걸 믿어준 건, 몇천 번 중에서도 고작 몇 번뿐.\"", Line_Normal);
 	} else {
 		ModPlayVoiceLS(4, 5, "ps3/s14/05/vt4ba_rika1064", 256, TRUE);
 		OutputLine(NULL, "「…そうですね。",

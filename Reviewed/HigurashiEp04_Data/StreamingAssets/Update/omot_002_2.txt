@@ -289,7 +289,7 @@ void main()
 //rその紙切れには、大きな目立つ文字が印刷されていた…そう、『デザートフェスタ食べ放題ご招待券』と！！
 	if (GetGlobalFlag(GADVMode)) { OutputLineAll("", NULL, Line_ContinueAfterTyping); }
 	OutputLine(NULL, "その紙切れには、大きな目立つ文字が印刷されていた…そう、『デザートフェスタ食べ放題ご招待券』と！！",
-			NULL, "종이에는 커다랗게 눈에 띄는 글자가 인쇄되어 있다. 그래, "디저트 페스타 뷔페 초대권"이라고!! ", Line_Normal);
+			NULL, "종이에는 커다랗게 눈에 띄는 글자가 인쇄되어 있다. 그래, \"디저트 페스타 뷔페 초대권\"이라고!! ", Line_Normal);
 	ClearMessage();
 
 	FadeAllBustshots( 200, TRUE );
@@ -302,7 +302,7 @@ void main()
 			NULL, "\"방금 전 대사 그대로 돌려드리죠.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600114", 256, TRUE);
 	OutputLine(NULL, "『切り札は最後の最後に取っておく』。",
-			NULL, " \비장의 카드는 마지막의 마지막까지 숨겨둔다.\"", Line_WaitForInput);
+			NULL, " 비장의 카드는 마지막의 마지막까지 숨겨둔다.", Line_WaitForInput);
 	ModPlayVoiceLS(4, 6, "ps3/s14/06/210600115", 256, TRUE);
 	OutputLine(NULL, "くっくっくっ…♪」",
 			NULL, " 큭큭큭...♪\"", Line_Normal);
