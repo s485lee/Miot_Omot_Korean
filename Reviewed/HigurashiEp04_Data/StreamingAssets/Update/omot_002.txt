@@ -368,7 +368,7 @@ void main()
 			NULL, "\"어어어어쩔 수 없잖아?! ", Line_WaitForInput);
 	ModPlayVoiceLS(4, 1, "ps3/s14/01/210100013", 256, TRUE);
 	OutputLine(NULL, "　『ひょっとしたら』『もしかしたら』の可能性についついすがってしまう純粋な少年の心をわかってくれよぉっ！」",
-			NULL, "\"어어어어쩔 수 없잖아?! '어쩌면', '혹시' 하는 가능성을 무심코 기대해버린 순수한 소년의 마음을 이해해 달라고!\" ", Line_Normal);
+			NULL, "'어쩌면', '혹시' 하는 가능성을 무심코 기대해버린 순수한 소년의 마음을 이해해 달라고!\" ", Line_Normal);
 	ClearMessage();
 
 	ModDrawCharacter(3, 3, "sprite/me1a_tokui_a1_", "0", 160, 0, 0, FALSE, 0, 0, 0, 0, 0, 0, 0, 20, 200, TRUE );
